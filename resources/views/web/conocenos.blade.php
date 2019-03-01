@@ -17,8 +17,8 @@
     </div>
     <div class="col-md-6">
       <div class="container">
-        <h3>
-        <u>El Centro De Excelencia en Prevención de Cáncer</u>
+        <h3 align="center">
+        El Centro De Excelencia en Prevención de Cáncer
       </h3>
       <br>
       <p align="justify">
@@ -164,55 +164,217 @@
     </div>
     <br><br>
 </div>
-<section class="team-area pt-100 pb-100" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-xl-8 mx-auto text-center">
-          <div class="section-title">
-            <h4>Mi equipo</h4>
-            <p>Contamos, con un equipo de profesionales calificados, líderes en prevención primaria y secundaria de cáncer en el Perú, quienes están comprometidos con su misión de salvar vidas y educar a la población sobre la prevención de la enfermedad. </p>
-          </div>
-        </div>
+
+
+<style type="text/css">
+
+  .row.heading h2 {
+    color: #fff;
+    font-size: 52.52px;
+    line-height: 95px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 40px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.heading.heading-icon {
+    display: block;
+}
+.padding-lg {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.practice-area.padding-lg {
+    padding-bottom: 55px;
+    padding-top: 55px;
+}
+.practice-area .inner{
+     border:1px solid #999999;
+   text-align:center;
+   margin-bottom:28px;
+   padding:40px 25px;
+}
+.our-webcoderskull .cnt-block:hover {
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    border: 0;
+}
+.practice-area .inner h3{
+    color:#3c3c3c;
+  font-size:24px;
+  font-weight:500;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+}
+.practice-area .inner p{
+    font-size:14px;
+  line-height:22px;
+  font-weight:400;
+}
+.practice-area .inner img{
+  display:inline-block;
+}
+
+
+.our-webcoderskull{
+
+
+}
+.our-webcoderskull .cnt-block{
+   float:left;
+   width:100%;
+   background:#fff;
+   padding:30px 20px;
+   text-align:center;
+   border:2px solid #d5d5d5;
+   margin: 0 0 28px;
+}
+.our-webcoderskull .cnt-block figure{
+   width:148px;
+   height:148px;
+   border-radius:100%;
+   display:inline-block;
+   margin-bottom: 15px;
+}
+.our-webcoderskull .cnt-block img{
+   width:148px;
+   height:148px;
+   border-radius:100%;
+}
+.our-webcoderskull .cnt-block h3{
+   color:#2a2a2a;
+   font-size:20px;
+   font-weight:500;
+   padding:6px 0;
+   text-transform:uppercase;
+}
+.our-webcoderskull .cnt-block h3 a{
+  text-decoration:none;
+  color:#2a2a2a;
+}
+.our-webcoderskull .cnt-block h3 a:hover{
+  color:#337ab7;
+}
+.our-webcoderskull .cnt-block p{
+   color:#2a2a2a;
+   font-size:13px;
+   line-height:20px;
+   font-weight:400;
+}
+.our-webcoderskull .cnt-block .follow-us{
+  margin:20px 0 0;
+}
+.our-webcoderskull .cnt-block .follow-us li{
+    display:inline-block;
+  width:auto;
+  margin:0 5px;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa{
+   font-size:24px;
+   color:#767676;
+}
+.our-webcoderskull .cnt-block .follow-us li .fa:hover{
+   color:#025a8e;
+}
+
+</style>
+
+<section class="our-webcoderskull padding-lg">
+  <div class="container">
+
+      <div class="section-title">
+                  <h4 style="color: #606060; ">DIRECTIVOS</h4>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="single-team">
-            <img src="http://infinityflamesoft.com/html/xenon-preview/assets/img/team/team1.jpg" alt="">
-            <div class="team-hover">
-              <h4>john doe <span>web developer</span></h4>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-youtube"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr-AguilarRamosPedro.png" class="img-responsive" alt=""></figure>
+            <h3 >Dr. Aguilar Ramos Pedro </h3><br>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="single-team">
-            <img src="http://infinityflamesoft.com/html/xenon-preview/assets/img/team/team2.jpg" alt="">
-            <div class="team-hover">
-              <h4>john doe <span>web developer</span></h4>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-youtube"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Grisson-Barron,-Gilmar.png" class="img-responsive" alt=""></figure>
+            <h3 >Dr. Grisson Barron, Gilmar </h3><br>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="single-team">
-            <img src="http://infinityflamesoft.com/html/xenon-preview/assets/img/team/team3.jpg" alt="">
-            <div class="team-hover">
-              <h4>john doe <span>web developer</span></h4>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-youtube"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Lama-Calle,-Carlos.png" class="img-responsive" alt=""></figure>
+            <h3 >Dr. Lama Calle, Carlos</h3><br>
           </div>
-        </div>
-      </div>
-    </div>
-    </section>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-López-Blanco,-Aldo.png" class="img-responsive" alt=""></figure>
+            <h3 >Dr. López Blanco, Aldo </h3><br>
+          </div>
+      </li>
+    </ul>
+
+
+    <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" class="img-responsive" alt=""></figure>
+            <h3 >Dr. Velarde Galdos, Raúl </h3><br>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Mendez,-Marco.png" class="img-responsive" alt=""></figure>
+            <h3 >Dr. Velarde Méndez, Marco</h3><br>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Carrasco-Collantes,-Marcia.png" class="img-responsive" alt=""></figure>
+            <h3 >Dra. Carrasco Collantes, Marcia</h3><br>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Malca-Tocas,-Mirtha.png" class="img-responsive" alt=""></figure>
+            <h3 >Dra. Malca Tocas, Mirtha </h3><br>
+          </div>
+      </li>
+    </ul>
+
+
+
+        <ul class="row">
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Gonzales-Cabrera-,-Magali-Jovana.png" class="img-responsive" alt=""></figure>
+            <h3 >Lic. Gonzáles Cabrera , Magali Jovana </h3><br>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Lopez-Ampuero,-Catya-Luz.png" class="img-responsive" alt=""></figure>
+            <h3 >Lic. López Ampuero, Catya Luz</h3><br>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Medrano-Guillen,-Claudia-Nathaly.png" class="img-responsive" alt=""></figure>
+            <h3> Lic. Medrano Guillen, Claudia Nathaly </h3><br>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Torres-Campos,-Clerk-Oriele.png" class="img-responsive" alt=""></figure>
+            <h3 >Lic. Torres Campos, Clerk Oriele </h3><br>
+          </div>
+      </li>
+    </ul>
+  </div>
+</section>
 @endsection
 

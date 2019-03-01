@@ -16,8 +16,8 @@
     </div>
     <div class="col-md-6">
       <div class="container">
-         <h3>
-        <u>CÁNCER DE CUELLO UTERINO</u>
+         <h3 align="center">
+        CÁNCER DE CUELLO UTERINO
       </h3>
       <br>
 

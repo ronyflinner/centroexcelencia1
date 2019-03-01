@@ -85,7 +85,7 @@
 
        </div>
       <div style="position: relative;">
-            <div class="d-inline d-sm-none" style="position: absolute; left: 60%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: #f34343; border: 0px;">Inscribete Aquí</button> </a></div>
+            <div class="d-inline d-sm-none" style="position: absolute; left: 34%; top: 380px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red;">Inscribete Aquí</button> </a></div>
 
             <div class="d-none d-sm-inline d-md-none" style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
               <span>Inscribete Aquí</span>
@@ -99,9 +99,7 @@
               <span>Inscribete Aquí</span>
             </button></a></div>
 
-            <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
-              <span>Inscribete Aquí</span>
-            </button></a></div>
+            <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscribete Aquí</button> </a></div>
        </div>
 
       <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slides-3.png" style="width: 380px" alt="First slide">
@@ -250,10 +248,10 @@ a:hover > .ico {
               <br>
               <div class="row d-flex justify-content-center">
                 <div class="col-xs-12 ">
-                     <img src="{{ url('centro') }}/imagenes/directivos/raulv.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
-                     <h3>Gives me hope</h3><br>
-                      <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
-                     <small class="smallest mute">- Yayo Dudemous</small>
+                     <img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
+                     <h3 style="color:white">Dr. Raúl Velarde Galdós </h3><br>
+                      <h4 style="color:white">Director Médico de Liga Contra el Cáncer</h4>
+
                 </div>
 
               </div>
@@ -263,32 +261,18 @@ a:hover > .ico {
        <div class="carousel-caption">
               <br>
               <div class="row d-flex justify-content-center">
-                <div class="col-xs-12">
-                  <br><br>
-                     <img src="http://via.placeholder.com/200x200" alt="" class="img-responsive rounded-circle img-fluid"/>
-                     <h3>Gives me hope</h3><br>
-                      <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
-                     <small class="smallest mute">- Yayo Dudemous</small>
+                <div class="col-xs-12 ">
+                     <img src="{{ url('centro') }}/imagenes/directivos/Lic.-Lopez-Ampuero,-Catya-Luz.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
+                     <h3 style="color:white">Lic. Catya López Ampuero </h3><br>
+                      <h4 style="color:white">Coordinadora</h4>
+
                 </div>
 
               </div>
 
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="carousel-caption">
-              <br>
-              <div class="row d-flex justify-content-center">
-                <div class="col-xs-12">
-                     <img src="http://via.placeholder.com/200x200" alt="" class="img-responsive rounded-circle img-fluid"/>
-                     <h3>Gives me hope</h3><br>
-                      <small>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</small>
-                     <small class="smallest mute">- Yayo Dudemous</small>
-                </div>
 
-              </div>
-        </div>
-      </div>
     </div>
     <div class="float-right navi">
     <a class="" href="#carouselExampleControls" role="button" data-slide="prev">

@@ -313,18 +313,18 @@ elemento{
         <div class="d-flex justify-content-center" style="border-right: 2px solid white; border-left: 2px solid white; height: 350px; ">
           <div class="container d-flex align-items-center">
             <div class="container">
-                          <div class="mb-5"></div>
+            <div class="mb-3"></div>
             <div class="cnt-block equal-hight">
             <h5 style="color:white" align="center">CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD</h5>
-             <div class="mb-5"></div>
+             <div class="mb-2"></div>
             <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
             <div class="mb-2" ></div>
             <h6 align="center" style="color:white">Fecha de inicio: 9 y 10 de abril</h6>
             <div class="mb-2"></div>
             <h6 align="center" style="color:white">Lugar: Hotel Sol de Oro, Calle San Martín 305 miraflores</h6>
-            <br>
+           <div class="mb-2"></div>
             <div class="d-flex justify-content-center">
-              <a class="btn btn-primary btn-download" href="{{ url('/') }}/words/pdfcongreso.pdf" download="CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD.pdf"><span class="glyphicon glyphicon-ok"></span> Descargar Temario</a>
+              <a class="btn btn-primary btn-download" href="{{ url('/') }}/words/pdfcongreso.pdf" download="CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD.pdf" style="background: white; border: 0px; color:red;"><span class="glyphicon glyphicon-ok"></span> Descargar Temario</a>
 
 
             </div>
@@ -522,13 +522,15 @@ elemento{
 </div>
 </section>
 
+<style type="text/css">
+
+</style>
 <div class="d-flex justify-content-center" style="background: url('{{ url('centro') }}/imagenes/imagen-1.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; height: 200px" >
       <!--Accordion wrapper-->
    <div class="d-flex align-items-center" >
-         <a class="btn btn-primary"  href="#primary" data-toggle="modal"><h4><i class="glyphicon glyphicon-eye-open"></i>Inscribete</h4></a>
-
+         <a class="btn btn-primary"   href="#primary" data-toggle="modal" style="background: white; border: 0px; color:red; padding: 20px;"><span class="glyphicon glyphicon-ok"></span> Inscribete Aquí</a>
    </div>
 </div>
 

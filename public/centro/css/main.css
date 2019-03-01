@@ -193,8 +193,8 @@ header .btn-primary {
     text-transform: uppercase;
 }
 header .btn-primary:hover {
-    color: #ff0;
-    border-color: #ff0;
+   /* color: #ff0;
+    border-color: #ff0; */
     background-color: transparent;
     border: 2px solid #ff0;
 }
@@ -325,14 +325,14 @@ header .btn-primary:hover {
     font-weight: 400;
 }
 .blog .blog-column1 .btn-primary {
-    color: #002fc8;
+
     font-size: 14px;
     font-weight: 500;
     padding: 0;
     border-color: transparent;
     background-color: transparent;
 }
-.blog .blog-column1 .btn-primary:hover {color: #002fc8;}
+.blog .blog-column1 .btn-primary:hover {}
 .btn-primary:not(:disabled):not(.disabled):active:focus {box-shadow: none;}
 .blog .image-one  {
     overflow: hidden;
@@ -750,14 +750,14 @@ footer .footer-copyright a {color: #ffff00;border-bottom: 1px solid #ffff00;}
     font-weight: 400;
 }
 .blog-page .blog-column1 .btn-primary {
-    color: #002fc8;
+
     font-size: 14px;
     font-weight: 500;
     padding: 0;
     border-color: transparent;
     background-color: transparent;
 }
-.blog-page .blog-column1 .btn-primary:hover {color: #002fc8;}
+.blog-page .blog-column1 .btn-primary:hover {}
 .blog-page .btn-primary:not(:disabled):not(.disabled):active:focus {box-shadow: none;}
 .blog-page .image-one  {
     overflow: hidden;
@@ -1030,14 +1030,14 @@ textarea.form-control {
     padding-bottom: 0;
 }
 #blog-page .blog-column1 .btn-primary {
-    color: #002fc8;
+   
     font-size: 14px;
     font-weight: 500;
     padding: 0;
     border-color: transparent;
     background-color: transparent;
 }
-#blog-page .blog-column1 .btn-primary:hover {color: #002fc8;}
+#blog-page .blog-column1 .btn-primary:hover {}
 #blog-page .btn-primary:not(:disabled):not(.disabled):active:focus {box-shadow: none;}
 #blog-page .image-one  {
     overflow: hidden;
@@ -1494,16 +1494,14 @@ textarea.form-control {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background-color: #108d6f;
-    border-color: #108d6f;
+
     box-shadow: none;
     outline: none;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #007b5e;
-    border-color: #007b5e;
+
 }
 
 section {
