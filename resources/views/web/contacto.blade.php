@@ -2,16 +2,13 @@
 
 @section('content')
 <!-- Contact section Start -->
-<div class="jumbotron jumbotron-sm" style="background: #ea2929;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-lg-12">
-                <h1 class="h1">
-                    Contactanos</h1>
-            </div>
-        </div>
-    </div>
-</div>
+<section class="banner" style="background-image: url({{ url('centro') }}/imagenes/3.png);">
+
+    </section>
+<br>
+       <div class="section-title">
+            <h4 style="color: #606060; " align="center">Contacto</h4>
+       </div>
 <div class="container">
 
     @if ($errors->any())

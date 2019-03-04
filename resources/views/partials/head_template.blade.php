@@ -22,6 +22,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{url('centro')}}/css/fileinput.min.css">
 
+
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
     <script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
 

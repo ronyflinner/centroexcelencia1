@@ -17,18 +17,14 @@
     </div>
     <div class="col-md-6">
       <div class="container">
-        <h3 align="center">
-        El Centro De Excelencia en Prevención de Cáncer
-      </h3>
+
       <br>
       <p align="justify">
-          El Centro De Excelencia en Prevención de Cáncer, es una organización educativa que forma parte de La Liga Contra el Cáncer, institución líder con 70 años en la prevención del cáncer en el Perú realizando acciones de prevención y detección con el objetivo de disminuir la alta incidencia de cáncer en nuestro país.</p>
-      <p align="justify">
-          Este nuevo Centro de Excelencia en Prevención de Cáncer, contará con especialistas calificados en, detección precoz, diagnóstico y tratamiento oportuno de lesiones precancerosas y además con conocimientos en problemas de salud pública en países en vías de desarrollo. Cuya misión es salvar vidas y educar a la población sobre la prevención y detección de la enfermedad.
-      </p>
-      <p align="justify">
-          La creación del Centro de Excelencia, tiene como objetivo formar y capacitar a profesionales de la salud en prevención y control de los diferentes tipos de cáncer: cáncer de cuello uterino, cáncer de estómago, cáncer de mama, cáncer de varones (próstata, pene y testículos) y cáncer de piel; buscando contribuir a la reducción de la incidencia, morbilidad y mortalidad del cáncer, mejorando así la calidad de vida de la población más vulnerable.
-      </p>
+         El Centro De Excelencia en Prevención de Cáncer, es una organización educativa que forma parte de La Liga Contra el Cáncer, institución líder con 70 años en la prevención del cáncer en el Perú realizando acciones de prevención y detección con el objetivo de disminuir la alta incidencia de cáncer en nuestro país.
+El nuevo Centro de Excelencia en Prevención de Cáncer, cuenta con un staff de especialistas altamente calificados en detección precoz, diagnóstico y tratamiento oportuno de los principales tipos de cáncer que afectan a la sociedad peruana, además con conocimientos en problemas de salud pública en países en vías de desarrollo
+La creación del nuevo Centro de Excelencia está dirigido a médicos y profesionales de la salud,  para contribuir en la reducción de la incidencia, morbilidad y mortalidad del cáncer, mejorando así la calidad de vida de la población más vulnerable.
+</p>
+
         <hr>
       </div>
 

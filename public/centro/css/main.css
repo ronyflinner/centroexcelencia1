@@ -61,12 +61,12 @@ nav {z-index: 999;transition: all 0.3s;}
 .navbar {padding: 50px 0;z-index: 9999;}
 .navbar-brand {margin-top: -15px;}
 .navbar-dark .navbar-nav .active>.nav-link {color: rgb(0, 0, 0); border-bottom: 3px solid red;}
-.navbar-expand-lg .navbar-nav .nav-link {color: black;font-size: 12px;padding-right: 25px;padding-left: 25px;padding: .2rem 1rem;font-weight: 500;text-transform: uppercase;}
+.navbar-expand-lg .navbar-nav .nav-link {color: black;font-size: 11px;padding-right: 25px;padding-left: 25px;padding: .2rem 1rem;font-weight: 500;text-transform: uppercase;}
 .navbar-dark .navbar-nav .nav-link:hover {color: rgb(0, 0,0); border-bottom: 3px solid red;}
 .navbar-dark .navbar-nav .active:after {display: none;}
 .navbar-dark .navbar-nav li:last-child:after { display: none;}
 .navbar-dark .navbar-nav li:last-child {margin-right: -25px;}
-.navbar-expand-lg .navbar-nav li {position: relative;padding: 0 9px;letter-spacing: 0.5px;}
+.navbar-expand-lg .navbar-nav li {position: relative;padding: 0 3px;letter-spacing: 0.5px;}
 .navbar-expand-lg .navbar-nav li:after {
     content: ' \007C';
     color: #fff;
@@ -1184,7 +1184,7 @@ textarea.form-control {
     .navbar {padding: 30px 0;}
     .navbar-expand-lg .navbar-nav li:after{top: 0px;}
     .sticky {padding: 15px 0;}
-    .navbar-expand-lg .navbar-nav .nav-link{font-size: 12px;}
+    .navbar-expand-lg .navbar-nav .nav-link{font-size: 10px;}
     header .carousel-item img {height: 640px;}
     header .carousel-item h3{font-size: 16px;padding: 15px 40px;letter-spacing: 0.5px; padding-bottom: 15px;}
     header .carousel-caption {width: 75%;} 

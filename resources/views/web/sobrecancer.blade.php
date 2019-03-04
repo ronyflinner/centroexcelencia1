@@ -94,7 +94,7 @@
                             <img class="group list-group-image img-fluid" src="{{ url('centro') }}/imagenes/sbc_1.png" alt="" />
                         </div>
                         <div class="caption card-body" >
-                            Hoy en día, en el mundo, el cáncer causa 18 millones de nuevos casos, generando 9.6 millones de muertes; además, 43.8 millones de personas viven con cáncer actualmente. Se estima que esta cifra se incrementará alarmantemente hasta 2020, sobre todo en países de desarrollo.
+                           Hoy en día, en el mundo, el cáncer causa 18 millones de nuevos casos, generando 9.6 millones de muertes; además, 43.8 millones de personas viven con cáncer actualmente. Se estima que esta cifra se incrementará alarmantemente hasta 2020, sobre todo en países de desarrollo.
                             <br><br><br>
                         </div>
                     </div>
@@ -105,7 +105,7 @@
                              <img class="group list-group-image img-fluid" src="{{ url('centro') }}/imagenes/sbc_2.png" alt="" />
                         </div>
                         <div class="caption card-body">
-                           El cáncer en el Perú es un problema de salud pública. Según el último informe realizado por la Agencia Internacional de Investigación sobre el Cáncer (IARC), Globocan 2018, en el Perú al año se presentan más de 66 mil 627 nuevos casos de cáncer y 33 mil 098 personas fallecen a causa de la enfermedad, por falta de cultura preventiva y estilos de vida saludables.
+                          El cáncer en el Perú es un problema de salud pública. Según el último informe realizado por la Agencia Internacional de Investigación sobre el Cáncer (IARC), Globocan 2018, en el Perú al año se presentan más de 66 mil 627 nuevos casos de cáncer y 33 mil 098 personas fallecen a causa de la enfermedad, por falta de cultura preventiva y estilos de vida saludables.
                         </div>
                     </div>
                 </div>
@@ -119,120 +119,10 @@
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
-</div>
-
-
-<div class="box">
-    <div class="container">
-        <div class="row">
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px " >
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_1-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Apoyo político limitado</p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_2-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Infraestructura y recursos limitados.</p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_3-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Decisiones inadecuadas </p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_4-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Sistemas de información en cáncer inadecuados</p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_5-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Falta de integración y coordinación de los esfuerzos para el control del cáncer a nivel intersectorial. </p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_6-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Escaso apoyo a la investigación  </p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121; height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_7-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Falta de monitoreo y evaluación de las intervenciones. </p>
-
-                     </div>
-                </div>
-
-
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-
-                    <div class="box-part text-center" style="background:#EF2121;height:300px ">
-
-                        <img id="imgG" src="{{ url('centro') }}/imagenes/sbc_8-ico.png" alt="Avatar" style="height:100px">
-
-                        <p style="color: white">Inequidad social </p>
-
-                     </div>
-                </div>
-
-
-
-
 
 
         </div>
-    </div>
-</div>
 
 @endsection
 
