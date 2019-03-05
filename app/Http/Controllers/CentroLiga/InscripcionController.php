@@ -4,7 +4,9 @@ namespace App\Http\Controllers\CentroLiga;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Validator;
 
 class InscripcionController extends Controller {
 	/**
@@ -45,44 +47,43 @@ class InscripcionController extends Controller {
 	 */
 	public function store(Request $request) {
 
-		$rules =  array('captcha' => ['required', 'captcha']); 
-	    $validator = Validator::make( 
-	        [ 'captcha' => Input::get('captcha') ], 
-	        $rules, 
-	        // Mensaje de error personalizado 
-	        [ 'captcha' => 'El captcha ingresado es incorrecto.' ]
-	    ); 
-	    if ($validator->passes()) { 
-	        $name = $request->input('name');
-		$dni = $request->input('dni');
-		$email = $request->input('email');
-		$cell = $request->input('cell');
-		$curso = $request->input('curso');
-		$tipo = $request->input('tipo');
-		$archivo = $request->file('archivo');
-		$slug = str_random(180);
-		$slug2 = str_random(180);
-		$fecha = date("Y") . "-" . date("m") . "-" . date("d");
+		$rules = array('captcha' => ['required', 'captcha']);
+		$validator = Validator::make(
+			['captcha' => Input::get('captcha')],
+			$rules,
+			// Mensaje de error personalizado
+			['captcha' => 'El captcha ingresado es incorrecto.']
+		);
+		if ($validator->passes()) {
+			$name = $request->input('name');
+			$dni = $request->input('dni');
+			$email = $request->input('email');
+			$cell = $request->input('cell');
+			$curso = $request->input('curso');
+			$tipo = $request->input('tipo');
+			$archivo = $request->file('archivo');
+			$slug = str_random(180);
+			$slug2 = str_random(180);
+			$fecha = date("Y") . "-" . date("m") . "-" . date("d");
 
-		if ($request->file('archivo')) {
+			if ($request->file('archivo')) {
 
-			$path = $this->addFile($request->file('archivo'));
+				$path = $this->addFile($request->file('archivo'));
 
-			$insertid = \DB::table('personas')->insertGetId(
-				['nombre' => $name, 'dni' => $dni, 'email' => $email, 'tipo_persona' => 1, 'token' => $slug, 'numero' => $cell]);
+				$insertid = \DB::table('personas')->insertGetId(
+					['nombre' => $name, 'dni' => $dni, 'email' => $email, 'tipo_persona' => 1, 'token' => $slug, 'numero' => $cell]);
 
-			$insertid2 = \DB::table('inscripcions')->insertGetId(['id_curso' => $curso, 'id_persona' => $insertid, 'tipo_inscripcion' => $tipo, 'voucher' => $path, 'token' => $slug2, 'fecha_inscripcion' => $fecha, 'estado' => 0]);
-			Session::flash('mensaje_success', 'Sus datos fueron guardados correctamente');
-			return view('web.inscripcion');
-			
+				$insertid2 = \DB::table('inscripcions')->insertGetId(['id_curso' => $curso, 'id_persona' => $insertid, 'tipo_inscripcion' => $tipo, 'voucher' => $path, 'token' => $slug2, 'fecha_inscripcion' => $fecha, 'estado' => 0]);
+				Session::flash('mensaje_success', 'Sus datos fueron guardados correctamente');
+				return view('web.inscripcion');
+
+			} else {
+				return view('web.inscripcion');
+			}
 		} else {
 			return view('web.inscripcion');
 		}
-	    } else { 
-	        return view('web.inscripcion');
-	    } 
 		//
-		
 
 	}
 
