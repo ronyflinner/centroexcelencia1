@@ -269,7 +269,7 @@ elemento{
 <div>
             <h2 style="color: #606060; " align="center">Cursos y Capacitaciones</h2>
               <hr>
-             <p align="center" style="text-transform:none;">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer. </p>
+             <p align="center" style="text-transform:none; color: black">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer. </p>
 </div>
 
 @include('errors.request')
@@ -387,8 +387,7 @@ elemento{
 <div class="container">
   <br>
   <div class="section-title">
-            <h4 style="font-size:30px; color: #606060;">Costo</h4>
-            <p style="text-transform:none;">Costo de inversión para cada participante, previo al día del evento </p>
+            <h4 style="font-size:30px; color: #606060;">Precio</h4>
   </div>
   <div class="row">
   <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
@@ -505,8 +504,7 @@ elemento{
 <div class="container">
   <br>
   <div class="section-title">
-            <h4 style="font-size:30px; color: #606060;">Costo</h4>
-            <p align="center" ></p>
+            <h4 style="font-size:30px; color: #606060;">Precio</h4>
   </div>
 
   <div class="row d-flex justify-content-center" >
