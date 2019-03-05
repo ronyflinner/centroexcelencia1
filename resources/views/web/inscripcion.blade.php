@@ -63,8 +63,9 @@
                     <div class="form-group">
                               <label for="exampleFormControlSelect1">Seleccionar Curso</label>
                               <select class="form-control" id="exampleFormControlSelect1" name="curso">
-                                <option value="1">CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD </option>
-                                <option value="2">CURSO DE ASESORIA GENETICA DE CANCER DIRIGIDO AL PRIMER NIVEL DE ATENCIÓN DE SALUD</option>
+
+                                <option value="1">Curso de Prevención de Cancer en Primer Nivel de Atención de Salud </option>
+                                <option value="2">Curso de Asesoria Genética de Cancer Dirigido al Perimer Nivel de Atención de Salud</option>
                               </select>
                           </div>
                   </div>
@@ -98,7 +99,7 @@
 
                 <div class="modal-footer">
 
-                    <button type="submit" class="btn btn-primary d-flex justify-content-center" id="enviar">
+                    <button type="submit" class="btn btn-primary" id="enviar">
                             Enviar</button>
 
                 </div>
@@ -118,77 +119,9 @@ font-family: 'Open Sans', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-html {
 
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
 
-body {
-     overflow-x:hidden;
-     font-family: 'Open Sans', sans-serif;
-     position:relative;
-}
 
-section {
-    padding: 30px 0;
-    overflow-y: auto !important;
-}
-
-section .section-title {
-    text-align: center;
-    color: #007b5e;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-}
-
-a {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
-}
-a:hover {
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  color: #000;
-  text-decoration: none;
-}
-
-h1,h2,h3,h4,h5{
-       font-family: 'Open Sans', sans-serif;
-}
-p, ul,li{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    line-height: 25px;
-}
-.form-inline .form-control.custom-file-upload {
-  border: 1px solid #ccc;
-
-  padding: 6px 12px;
-  cursor: pointer;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  width: 100%;
-}
-
-.wrap-input-container {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-.wrap-input-container input {
-position: absolute;
-font-size: 400px;
-opacity: 0;
-z-index: 1;
-top: 0;
-left: 0;
-}
 
 </style>
 

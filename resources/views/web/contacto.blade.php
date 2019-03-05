@@ -64,7 +64,7 @@
             <form>
             <legend><span class="glyphicon glyphicon-globe"></span>Información General</legend>
             <address>
-                <strong>Para mayor información comunicarse con Coordinación Académica</strong><br>
+                Para mayor información comunicarse con Coordinación Académica<br>
                 Lic. Catya López Ampuero<br>
 
                 <abbr title="Phone">
@@ -81,13 +81,11 @@
     </div>
 </div>
 
-
-<div class="g-recaptcha" data-sitekey="6LcgopQUAAAAAGlo2G4Vhn1dc72papTgB5rKwKcn"></div>
 <br><br><br>
 @endsection
 
 @section('javascript')
-  <script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+
   <script type="text/javascript">
 
      $('#btnContactUs').click(function(event) {

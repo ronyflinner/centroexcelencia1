@@ -75,7 +75,7 @@ figure.snip0078 figcaption p {
 }
 figure.snip0078 figcaption h2 {
   font-weight: 400;
-  text-transform: uppercase;
+  
 }
 figure.snip0078 figcaption h2 span {
   font-weight: 800;
@@ -229,7 +229,7 @@ ul{
    font-size:20px;
    font-weight:500;
    padding:6px 0;
-   text-transform:uppercase;
+
 }
 .our-webcoderskull .cnt-block h3 a{
   text-decoration:none;
@@ -267,8 +267,8 @@ elemento{
 </style>
 
 <div class="section-title">
-            <h4 style="color: #606060; ">CURSOS Y CONGRESOS</h4>
-             <p align="center">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer como: </p>
+            <h4 style="color: #606060; ">Cursos y Capacitaciones</h4>
+             <p align="center" style="text-transform:none;">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer como: </p>
 </div>
 
 @include('errors.request')
@@ -300,9 +300,8 @@ elemento{
    <div class="accordion accordion-1" id="accordionEx23" role="tablist">
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
-               <h2 class="text-uppercase mb-0 py-1">
-                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px">
-                       CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+               <h2 class="text-uppercase mb-0 py-1">    
+                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">Congreso de Prevención de Cáncer en Primer Nivel de Atención de Salud<i class="fa fa-angle-down rotate-icon fa-2x"></i>
                    </a>
                </h2>
 
@@ -335,7 +334,6 @@ elemento{
                   background-repeat: no-repeat;
                   background-position: center; height: 400px">  </div>-->
 
-
      <div class="col-md-6 " style="background:#ea2929; height: 400px">
          <br>
         <div class="d-flex justify-content-center" style="border-right: 2px solid white; border-left: 2px solid white; height: 350px; ">
@@ -343,7 +341,7 @@ elemento{
             <div class="container">
             <div class="mb-3"></div>
             <div class="cnt-block equal-hight">
-            <h5 style="color:white" align="center">CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD</h5>
+            <h5 style="color:white" align="center">Congreso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>
              <div class="mb-2"></div>
             <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
             <div class="mb-2" ></div>
@@ -389,11 +387,11 @@ elemento{
   <br>
   <div class="section-title">
             <h4 style="font-size:30px; color: #606060;">Costo</h4>
-            <p>Costo de inversión para cada participante, previo al día del evento </p>
+            <p style="text-transform:none;">Costo de inversión para cada participante, previo al día del evento </p>
   </div>
   <div class="row">
   <div class="col-md-3">
-        <div class="contenedor">
+        <a href="{{route('inscripcion.index')}}"><div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
@@ -401,41 +399,41 @@ elemento{
                 <h7 style="color:white">Precio : S/. 250</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>
-        </div>
+        </div></a>
   </div>
     <div class="col-md-3">
-        <div class="contenedor">
+        <a href="{{route('inscripcion.index')}}"><div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-2.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Médicos generales</h5>
                 <h7 style="color:white">Precio : S/. 200</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento : S/. 250</p></div>
-        </div>
+                <p style="font-size: 11px; color:white;" >Día del envento: S/. 250</p></div>
+        </div></a>
   </div>
 
   <div class="col-md-3">
-        <div class="contenedor">
+       <a href="{{route('inscripcion.index')}}"> <div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-3.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Otros Profesionales</h5>
                 <h7 style="color:white">Precio : S/. 180</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento : S/. 200</p></div>
-        </div>
+                <p style="font-size: 11px; color:white;" >Día del envento: S/. 200</p></div>
+        </div></a>
   </div>
   <div class="col-md-3">
-        <div class="contenedor">
+       <a href="{{route('inscripcion.index')}}"> <div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-4.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Internos</h5>
                 <h7 style="color:white">Precio : S/. 100</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento : S/. 150</p></div>
-        </div>
+                <p style="font-size: 11px; color:white;" >Día del envento: S/. 150</p></div>
+        </div></a>
   </div>
 
 
@@ -447,8 +445,8 @@ elemento{
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
                <h2 class="text-uppercase mb-0 py-1">
-                   <a class="collapsed" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98" style="font-size: 16px" >
-                       CURSO DE ASESORIA GENETICA DE PREVENCIÓN DE CANCER DIRIGIDO AL PRIMER NIVEL DE ATENCIÓN DE SALUD <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                   <a class="collapsed" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98" style="font-size: 16px; text-transform:none;" > 
+                       Curso de Asersoría Genética de Prevención de Cancer Dirigido al Primer Nivel de Atención de salud <i class="fa fa-angle-down rotate-icon fa-2x"></i>
                    </a>
                </h2>
            </div>
@@ -512,7 +510,7 @@ elemento{
   <div class="row d-flex justify-content-center">
 
   <div class="col-md-3">
-        <div class="contenedor">
+        <a href="{{route('inscripcion.index')}}"><div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
@@ -520,9 +518,9 @@ elemento{
                 <h7 style="color:white">Precio : S/. 250</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>
-        </div>
+        </div></a>
   </div>
-    <div class="col-md-3">
+   <a href="{{route('inscripcion.index')}}"> <div class="col-md-3">
         <div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-2.png" style='width: 250px' />
 
@@ -530,9 +528,9 @@ elemento{
         <div class="centrado"> <h5 style="color:white">Médicos generales</h5>
                 <h7 style="color:white">Precio : S/. 200</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento : S/. 250</p></div>
+                <p style="font-size: 11px; color:white;" >Día del envento: S/. 250</p></div>
         </div>
-  </div>
+  </div></a>
 
 
 </div>
@@ -571,7 +569,7 @@ elemento{
     text-align: center;
     margin: 0 0 40px;
     padding-bottom: 20px;
-    text-transform: uppercase;
+   
 }
 ul{
   margin:0;
@@ -690,19 +688,8 @@ ul{
   <div class="container">
      <div class="row">
 
-            <div class="col-md-4 col-sm-12  " style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; filter: grayscale(50%) brightness(200%);
-              -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 35px;" >
-                 <div class="d-flex justify-content-center">
 
-                 <img id="imgG" src="{{ url('centro') }}/imagenes/img2/Icon-estudio.png" alt="Avatar" style="height: 100px">
-               </div>
-               <h2 align="center" >PLAN DE ESTUDIO</h2>
-               <p  align="center">(IVAA, Crioterapia, Thermocuagulación, pruebas moleculares y vacunación contra VPH).</p>
-            </div>
-
-            <div class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+            <div class="col-md-4 col-sm-12 offset-2" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; filter: grayscale(50%) brightness(200%);
               -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 35px;" >

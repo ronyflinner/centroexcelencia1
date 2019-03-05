@@ -195,6 +195,7 @@ return [
 
 		HieuLe\Active\ActiveServiceProvider::class,
 		Yajra\Datatables\DatatablesServiceProvider::class,
+		Mews\Captcha\CaptchaServiceProvider::class,
 
 		//Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
 
@@ -255,6 +256,7 @@ return [
 
 		'Active' => HieuLe\Active\Facades\Active::class,
 		'Datatables' => Yajra\Datatables\Facades\Datatables::class,
+		'Captcha' => Mews\Captcha\Facades\Captcha::class,
 
 	],
 
