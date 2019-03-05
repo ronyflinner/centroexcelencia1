@@ -20,9 +20,9 @@
 
       <br>
       <p align="justify">
-         El Centro De Excelencia en Prevención de Cáncer, es una organización educativa que forma parte de La Liga Contra el Cáncer, institución líder con 70 años en la prevención del cáncer en el Perú realizando acciones de prevención y detección con el objetivo de disminuir la alta incidencia de cáncer en nuestro país.
-El nuevo Centro de Excelencia en Prevención de Cáncer, cuenta con un staff de especialistas altamente calificados en detección precoz, diagnóstico y tratamiento oportuno de los principales tipos de cáncer que afectan a la sociedad peruana, además con conocimientos en problemas de salud pública en países en vías de desarrollo
-La creación del nuevo Centro de Excelencia está dirigido a médicos y profesionales de la salud,  para contribuir en la reducción de la incidencia, morbilidad y mortalidad del cáncer, mejorando así la calidad de vida de la población más vulnerable.
+        El Centro De Excelencia en Prevención de Cáncer, es una organización educativa que forma parte de La Liga Contra el Cáncer, institución líder con 70 años en la prevención del cáncer en el Perú, realizando acciones de prevención y detección con el objetivo de disminuir la alta incidencia de cáncer en nuestro país.  Además, cuenta con un staff de especialistas altamente calificados en detección precoz, diagnóstico y tratamiento oportuno de los principales tipos de cáncer que afectan a la sociedad peruana.
+
+La creación Centro de Excelencia está dirigido a médicos y profesionales de la salud, para contribuir en la reducción de la incidencia, morbilidad y mortalidad del cáncer, mejorando así la calidad de vida de la población más vulnerable.
 </p>
 
         <hr>
@@ -138,7 +138,7 @@ La creación del nuevo Centro de Excelencia está dirigido a médicos y profesio
                  <img id="imgG" src="{{ url('centro') }}/imagenes/img2/mision.png" alt="Avatar" style="height:100px">
                </div>
                <h2 align="center" style="color:white">MISIÓN</h2>
-               <p  align="center" style="color:white">Promover la capacitación de los profesionales de salud de todos los niveles de atención en prevención primaria y secundaria de los diversos tipos de cáncer</p>
+               <p  align="center" style="color:white">Promover la capacitación y formación de los profesionales de salud de todos los niveles de atención en prevención primaria y secundaria de los diversos tipos de cáncer.</p>
             </div>
 
             <div class="col-md-4 col-sm-12 offset-md-4" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
