@@ -25,13 +25,20 @@
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
+                 @include('errors.request')
+        @include('errors.flash')
+                 <form class="contact100-form validate-form" enctype="multipart/form-data" action="{{ route('contactos2.store') }} " method="post"  id="avatarForm">
 
+                      <form class="contact100-form validate-form"  enctype="multipart/form-data">
+
+                      {!! Form::open(['route'=>'contactos2.store', 'method'=>'POST',"class"=>"form form-id",'files' => true, 'id'=>'form-id']) !!}
+                      {!! Form::token() !!}
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
                                 Nombre</label>
-                            <input type="text" class="form-control" id="nombre" placeholder="Ingresa nombre" required="required" />
+                            <input type="text" class="form-control" name="nombre"  id="nombre" placeholder="Ingresa nombre" required="required" />
                         </div>
                         <div class="form-group">
                             <label for="email">
@@ -39,7 +46,10 @@
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" id="email" placeholder="Ingresa correo electronico" required="required" /></div>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa correo electronico" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                          
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -50,10 +60,11 @@
                                 placeholder="Escribe el mensaje"></textarea>
                         </div>
                     </div>
-                    <div class="col-md-12">
 
-
-                        <button type="button" class="btn btn-primary pull-right" id="btnContactUs">
+                    <div class="col-md-4 offset-4">
+                        @captcha
+                     <input type="text" id="captcha" name="captcha">
+                        <button type="submit" class="btn btn-primary" id="btnContactUs">
                             Enviar mensaje</button>
                     </div>
                 </div>
@@ -69,8 +80,6 @@
 
                 <abbr title="Phone">
                     <a href="mailto:#">clopez@ligacancer.org.pe</a>
-
-
                 </abbr><br>
                 Teléfono: 204-0404
                 <br>Anexo: 244
@@ -86,39 +95,6 @@
 
 @section('javascript')
 
-  <script type="text/javascript">
-
-     $('#btnContactUs').click(function(event) {
-         vurl='{{ url('createComentario') }}';
-           var parametros = {
-                   "nombre" : $('#nombre').val(),
-                   "email" : $('#email').val(),
-                   "mensaje" : $('#message').val(),
-                };
-            console.log(vurl);
-            $.ajax({
-            url:   vurl,
-            data: parametros,
-            type:  'GET',
-            dataType : 'json',
-            headers: {
-                       'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                      } ,
-            success:  function (data) {
-
-                  console.log(data);
-
-                  location.reload();
-            },
-            error: function (data2) {
-               console.log('Error:', data2);
-              },
-              async: false
-            });
-     });
-
-
-  </script>
-
+ 
 @endsection
 

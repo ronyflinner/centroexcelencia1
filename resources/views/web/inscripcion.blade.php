@@ -13,7 +13,6 @@
 
        <div class="container">
         @include('errors.request')
-        @include('errors.flash')
                  <form class="contact100-form validate-form" enctype="multipart/form-data" action="{{ route('inscripcion.store') }} " method="post"  id="avatarForm">
 
                       <form class="contact100-form validate-form"  enctype="multipart/form-data">
@@ -99,8 +98,8 @@
 
                 <div class="modal-footer">
                    
-                     @captcha
-                     <input type="text" id="captcha" name="captcha">
+                     <p>{!! Captcha::img(); !!}</p>
+        <p>{!! Form::text('captcha') !!}</p>
                     <button type="submit" class="btn btn-primary" id="enviar">
                             Enviar</button>
 

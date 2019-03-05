@@ -45,11 +45,15 @@ class InscripcionController extends Controller {
 	 */
 	public function store(Request $request) {
 
-		$this->validate($request, [
-            'captcha' => 'required|captcha'
-        ]);
-		//
-		$name = $request->input('name');
+		$rules =  array('captcha' => ['required', 'captcha']); 
+	    $validator = Validator::make( 
+	        [ 'captcha' => Input::get('captcha') ], 
+	        $rules, 
+	        // Mensaje de error personalizado 
+	        [ 'captcha' => 'El captcha ingresado es incorrecto.' ]
+	    ); 
+	    if ($validator->passes()) { 
+	        $name = $request->input('name');
 		$dni = $request->input('dni');
 		$email = $request->input('email');
 		$cell = $request->input('cell');
@@ -70,10 +74,15 @@ class InscripcionController extends Controller {
 			$insertid2 = \DB::table('inscripcions')->insertGetId(['id_curso' => $curso, 'id_persona' => $insertid, 'tipo_inscripcion' => $tipo, 'voucher' => $path, 'token' => $slug2, 'fecha_inscripcion' => $fecha, 'estado' => 0]);
 			Session::flash('mensaje_success', 'Sus datos fueron guardados correctamente');
 			return view('web.inscripcion');
-			return response()->json($curso);
+			
 		} else {
-			return response()->json(2);
+			return view('web.inscripcion');
 		}
+	    } else { 
+	        return view('web.inscripcion');
+	    } 
+		//
+		
 
 	}
 

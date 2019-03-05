@@ -38,6 +38,13 @@ class ContactoController extends Controller {
 	 */
 	public function store(Request $request) {
 		//
+		$this->validate($request, [
+            'captcha' => 'required|captcha'
+        ]);
+		$slug = str_random(180);
+		$insertid = \DB::table('comentarios')->insertGetId(
+			['nombre' => $request->input('nombre'), 'email' => $request->input('email'), 'mensaje' => $request->input('message'), 'token' => $slug]);
+		return view('web.contacto');
 	}
 
 	/**

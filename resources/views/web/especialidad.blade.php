@@ -391,7 +391,7 @@ elemento{
             <p style="text-transform:none;">Costo de inversión para cada participante, previo al día del evento </p>
   </div>
   <div class="row">
-  <div class="col-md-3">
+  <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
         <a href="{{route('inscripcion.index')}}"><div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
 
@@ -402,7 +402,7 @@ elemento{
                 <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>
         </div></a>
   </div>
-    <div class="col-md-3">
+    <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
         <a href="{{route('inscripcion.index')}}"><div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-2.png" style='width: 250px' />
 
@@ -414,7 +414,7 @@ elemento{
         </div></a>
   </div>
 
-  <div class="col-md-3">
+  <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
        <a href="{{route('inscripcion.index')}}"> <div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-3.png" style='width: 250px' />
 
@@ -425,7 +425,7 @@ elemento{
                 <p style="font-size: 11px; color:white;" >Día del envento: S/. 200</p></div>
         </div></a>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
        <a href="{{route('inscripcion.index')}}"> <div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-4.png" style='width: 250px' />
 
@@ -508,9 +508,10 @@ elemento{
             <h4 style="font-size:30px; color: #606060;">Costo</h4>
             <p align="center" ></p>
   </div>
-  <div class="row d-flex justify-content-center">
 
-  <div class="col-md-3">
+  <div class="row d-flex justify-content-center" >
+
+  <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
         <a href="{{route('inscripcion.index')}}"><div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
 
@@ -521,7 +522,7 @@ elemento{
                 <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>
         </div></a>
   </div>
-   <a href="{{route('inscripcion.index')}}"> <div class="col-md-3">
+  <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
         <div class="contenedor">
         <img src="{{ url('centro') }}/imagenes/precio-2.png" style='width: 250px' />
 
@@ -531,7 +532,7 @@ elemento{
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento: S/. 250</p></div>
         </div>
-  </div></a>
+  </div>
 
 
 </div>
@@ -689,8 +690,10 @@ ul{
   <div class="container">
      <div class="row">
 
-
-            <div class="col-md-4 col-sm-12 offset-2" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+            <div class="col-md-2 col-sm-12" >
+                 
+            </div>
+            <div class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; filter: grayscale(50%) brightness(200%);
               -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 35px;" >

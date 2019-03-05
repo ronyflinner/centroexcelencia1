@@ -355,6 +355,8 @@ return [
 		Yajra\Datatables\DatatablesServiceProvider::class,
 		Mews\Captcha\CaptchaServiceProvider::class,
         Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
+
+
 		//Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
 
 	],
