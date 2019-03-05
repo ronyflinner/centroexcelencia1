@@ -4,9 +4,9 @@ namespace App\Http\Controllers\CentroLiga;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Input;
+
 use Illuminate\Support\Facades\Session;
-use Illuminate\Support\Facades\Validator;
+
 
 class InscripcionController extends Controller {
 	/**
@@ -47,15 +47,7 @@ class InscripcionController extends Controller {
 	 */
 	public function store(Request $request) {
 
-		$rules = array('captcha' => ['required', 'captcha']);
-		$validator = Validator::make(
-			['captcha' => Input::get('captcha')],
-			$rules,
-			// Mensaje de error personalizado
-			['captcha' => 'El captcha ingresado es incorrecto.']
-		);
-		if ($validator->passes()) {
-			$name = $request->input('name');
+		$name = $request->input('name');
 			$dni = $request->input('dni');
 			$email = $request->input('email');
 			$cell = $request->input('cell');
@@ -80,9 +72,6 @@ class InscripcionController extends Controller {
 			} else {
 				return view('web.inscripcion');
 			}
-		} else {
-			return view('web.inscripcion');
-		}
 		//
 
 	}

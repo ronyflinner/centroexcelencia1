@@ -49,7 +49,7 @@
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa correo electronico" required="required" /></div>
                         </div>
                         <div class="form-group">
-                          
+                           <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -62,10 +62,13 @@
                     </div>
 
                     <div class="col-md-4 offset-4">
-                        @captcha
-                     <input type="text" id="captcha" name="captcha">
+                        
                         <button type="submit" class="btn btn-primary" id="btnContactUs">
                             Enviar mensaje</button>
+                    </div>
+                    
+                    <div class="col-md-4 d-flex">
+                      
                     </div>
                 </div>
                 </form>
@@ -95,6 +98,6 @@
 
 @section('javascript')
 
- 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 @endsection
 

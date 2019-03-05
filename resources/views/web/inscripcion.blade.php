@@ -97,9 +97,8 @@
 
 
                 <div class="modal-footer">
-                   
-                     <p>{!! Captcha::img(); !!}</p>
-        <p>{!! Form::text('captcha') !!}</p>
+                    <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
+
                     <button type="submit" class="btn btn-primary" id="enviar">
                             Enviar</button>
 
@@ -130,7 +129,7 @@ font-family: 'Open Sans', sans-serif;
 
 @section('javascript')
   <script src="{{ url('adminlte/js/fileinput.min.js') }}"></script>
-
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
  <script type="text/javascript">
 
        // Dynamically add-on fields

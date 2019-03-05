@@ -11,6 +11,7 @@
         "buzz/laravel-google-captcha": "^2.1",
         "doctrine/dbal": "^2.5",
         "filp/whoops": "~2.0",
+        "google/recaptcha": "^1.2",
         "hieu-le/active": "^3.5",
         "intervention/image": "^2.3",
         "laravel/framework": "5.5.*",
