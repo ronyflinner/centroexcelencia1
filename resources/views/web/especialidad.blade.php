@@ -269,7 +269,7 @@ elemento{
 <div>
             <h2 style="color: #606060; " align="center">Cursos y Capacitaciones</h2>
               <hr>
-             <p align="center" style="text-transform:none;">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer como: </p>
+             <p align="center" style="text-transform:none;">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer. </p>
 </div>
 
 @include('errors.request')
@@ -342,7 +342,7 @@ elemento{
             <div class="container">
             <div class="mb-3"></div>
             <div class="cnt-block equal-hight">
-            <h5 style="color:white" align="center">Congreso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>
+            <h5 style="color:white" align="center">Curso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>
              <div class="mb-2"></div>
             <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
             <div class="mb-2" ></div>
@@ -396,7 +396,7 @@ elemento{
         <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
-        <div class="centrado"> <h5 style="color:white">Medicos Especialistas</h5>
+        <div class="centrado"> <h5 style="color:white">Médicos Especialistas</h5>
                 <h7 style="color:white">Precio : S/. 250</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>
@@ -407,7 +407,7 @@ elemento{
         <img src="{{ url('centro') }}/imagenes/precio-2.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
-        <div class="centrado"> <h5 style="color:white">Médicos generales</h5>
+        <div class="centrado"> <h5 style="color:white">Médicos Generales</h5>
                 <h7 style="color:white">Precio : S/. 200</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento: S/. 250</p></div>
@@ -447,7 +447,7 @@ elemento{
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
                <h2 class="text-uppercase mb-0 py-1">
                    <a class="collapsed" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98" style="font-size: 16px; text-transform:none;" > <span class="glyphicon glyphicon-ok" style="color:blue"></span>
-                       Curso de Asersoría Genética de Prevención de Cancer Dirigido al Primer Nivel de Atención de salud <i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                       Curso de Asersoría Genética de Prevención de Cáncer Dirigido al Primer Nivel de Atención de salud <i class="fa fa-angle-down rotate-icon fa-2x"></i>
                    </a>
                </h2>
            </div>
@@ -516,7 +516,7 @@ elemento{
         <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
 
         <div class="texto-encima"></div>
-        <div class="centrado"> <h5 style="color:white">Medicos Especialistas</h5>
+        <div class="centrado"> <h5 style="color:white">Médicos Especialistas</h5>
                 <h7 style="color:white">Precio : S/. 250</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>

@@ -11,7 +11,7 @@
   <div class="row">
     <div class="col-md-6">
       <div class="d-flex justify-content-center">
-        <img src="{{ url('centro') }}/imagenes/DOCTORA.png" alt="logo" width="400" height="400">
+        <img src="{{ url('centro') }}/imagenes/DOCTORA.png" alt="logo" width="300" height="300">
       </div>
 
     </div>
@@ -22,8 +22,8 @@
       <p align="justify">
         El Centro De Excelencia en Prevención de Cáncer, es una organización educativa que forma parte de La Liga Contra el Cáncer, institución líder con 70 años en la prevención del cáncer en el Perú, realizando acciones de prevención y detección con el objetivo de disminuir la alta incidencia de cáncer en nuestro país.  Además, cuenta con un staff de especialistas altamente calificados en detección precoz, diagnóstico y tratamiento oportuno de los principales tipos de cáncer que afectan a la sociedad peruana.
 
-La creación Centro de Excelencia está dirigido a médicos y profesionales de la salud, para contribuir en la reducción de la incidencia, morbilidad y mortalidad del cáncer, mejorando así la calidad de vida de la población más vulnerable.
-</p>
+        La creación Centro de Excelencia está dirigido a médicos y profesionales de la salud, para contribuir en la reducción de la incidencia, morbilidad y mortalidad del cáncer, mejorando así la calidad de vida de la población más vulnerable.
+        </p>
 
         <hr>
       </div>
