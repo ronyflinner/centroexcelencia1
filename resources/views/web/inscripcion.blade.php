@@ -98,7 +98,9 @@
 
 
                 <div class="modal-footer">
-
+                   
+                     @captcha
+                     <input type="text" id="captcha" name="captcha">
                     <button type="submit" class="btn btn-primary" id="enviar">
                             Enviar</button>
 

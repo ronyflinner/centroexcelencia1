@@ -44,6 +44,10 @@ class InscripcionController extends Controller {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function store(Request $request) {
+
+		$this->validate($request, [
+            'captcha' => 'required|captcha'
+        ]);
 		//
 		$name = $request->input('name');
 		$dni = $request->input('dni');

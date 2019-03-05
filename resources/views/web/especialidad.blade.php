@@ -266,8 +266,9 @@ elemento{
 
 </style>
 
-<div class="section-title">
-            <h4 style="color: #606060; ">Cursos y Capacitaciones</h4>
+<div>
+            <h2 style="color: #606060; " align="center">Cursos y Capacitaciones</h2>
+              <hr>
              <p align="center" style="text-transform:none;">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer como: </p>
 </div>
 
@@ -445,7 +446,7 @@ elemento{
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
                <h2 class="text-uppercase mb-0 py-1">
-                   <a class="collapsed" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98" style="font-size: 16px; text-transform:none;" > 
+                   <a class="collapsed" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98" style="font-size: 16px; text-transform:none;" > <span class="glyphicon glyphicon-ok" style="color:blue"></span>
                        Curso de Asersoría Genética de Prevención de Cancer Dirigido al Primer Nivel de Atención de salud <i class="fa fa-angle-down rotate-icon fa-2x"></i>
                    </a>
                </h2>
