@@ -35,24 +35,42 @@ class DocumentoSearchController extends Controller {
 		return response()->json($request->id);
 	}
 
+	public function denegarInscripcion(Request $request) {
+		$flight = Inscripcion::find($request->id);
+
+		$flight->estado = -1;
+
+		$flight->save();
+
+		return response()->json($request->id);
+	}
+
 	public function dataT(Request $request) {
 		$register = DB::table('inscripcions')
 			->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
 			->join('cursos', 'cursos.id', '=', 'inscripcions.id_curso')
 			->where('inscripcions.id_curso', $request->id)
-			->select('personas.nombre', 'personas.tipo_persona', 'personas.email', 'inscripcions.id', 'personas.dni', 'inscripcions.voucher')->get();
+			->select('personas.nombre', 'personas.tipo_persona', 'personas.email', 'inscripcions.id', 'personas.dni', 'inscripcions.voucher','inscripcions.estado' )->get();
 		//$register = Persona::where('tipo_persona', 1)->get();
 		$con = 1;
 		return datatables($register)
-			->addColumn('id', function ($val) use (&$con) {
+		->addColumn('id', function ($val) use (&$con) {
 				return $val->id;
-			})->addColumn('dni', function ($val) {
+		})->addColumn('dni', function ($val) {
 			return $val->dni;
-		})
-			->addColumn('nombre', function ($val) {
+		})->addColumn('nombre', function ($val) {
 				return $val->nombre;
-			})->addColumn('correo', function ($val) {
+		})->addColumn('correo', function ($val) {
 			return $val->email;
+		})->addColumn('estado', function ($val) {
+			if($val->estado==0){
+				return 'Recibido';
+			}else if($val->estado==1){
+				return 'Aceptado';
+			}else{
+				return 'Rechazado';
+			}
+			return $val->estado;
 		})->addColumn('voucher', function ($val) {
 			return "<button class='editar btn btn-primary'  value='" . $val->voucher . "' href='#primary' data-toggle='modal'><h4><i class='glyphicon glyphicon-eye-open'></i><input style='display:none' value='" . $val->voucher . "'></input></h4></button>";
 		})->rawColumns(['voucher'])->make(true);

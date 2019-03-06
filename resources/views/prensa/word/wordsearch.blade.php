@@ -91,12 +91,12 @@
                     </select>
               </div>
                </div>
-               <div class="col-md-6">
+             <!--  <div class="col-md-6">
                   <h4>Seleccionar : </h4>
                   <label class="radio-inline"><input type="radio" name="optradio" checked>Incripciones Aceptadas</label>
                   <label class="radio-inline"><input type="radio" name="optradio">Incripciones Rechazadas</label>
 
-               </div>
+               </div>-->
              </div>
 
         <div class="container-fluid" id="No">
@@ -107,6 +107,7 @@
                      <th>DNI</th>
                      <th>Nombre</th>
                      <th>Correo</th>
+                     <th>Estado</th>
                      <th>Voucher</th>
 
                   </tr>
@@ -196,7 +197,7 @@
             };
           $('#Na').remove();
           $('#Na_wrapper').remove();
-          $('#No').append('<table class="table table-bordered" id="Na"><thead><tr><th>N°</th> <th>DNI</th><th>Nombre</th> <th>Número</th><th>Habilitar</th><th>Editar</th></tr></thead></table>');
+          $('#No').append('<table class="table table-bordered" id="Na"><thead><tr><th>N°</th><th>DNI</th><th>Nombre</th><th>Correo</th><th>Estado</th><th>Voucher</th></tr></thead></table>');
 
           itable = $('#Na').DataTable({
                         processing: true,
@@ -214,6 +215,7 @@
                             {data: 'dni', name:'dni'},
                             {data: 'nombre', name:'nombre'},
                             {data: 'correo', name:'correo'},
+                            {data: 'estado', name:'estado'},
                             {data: 'voucher', name:'voucher'},
                         ],
                         bAutoWidth: false,
@@ -249,6 +251,7 @@
                             {data: 'dni', name:'dni'},
                             {data: 'nombre', name:'nombre'},
                             {data: 'correo', name:'correo'},
+                            {data: 'estado', name:'estado'},
                             {data: 'voucher', name:'voucher'},
                         ],
                         bAutoWidth: false,
@@ -303,8 +306,39 @@
                         $('#sel1').append("<option value='"+value['id']+"'>"+value['nombre']+"</option>")
 
                       }); */
-                  alert(data);
-                  console.log(data);
+
+                  location.reload();
+                 
+
+              },
+              error: function (data) {
+
+                 console.log('Error:', data);
+                },
+                async: false
+              });
+           });
+
+           $('#rechazar').click(function(){
+            // alert($('#imagen').attr('href'));
+              vurl='{{ url('admin/denegarInscripcion') }}';
+
+             var parametros = {
+                     "id" : $('#imagen').attr('href'),
+                  };
+              //$(location).attr('href',vurl);
+             // var doc = 'statusEdit';
+              $.ajax({
+              url:   vurl,
+              data: parametros,
+              type:  'GET', //método de envio
+              dataType : 'json',
+              headers: {
+                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        } ,
+              success:  function (data) { 
+                  location.reload();
+                  
 
               },
               error: function (data) {
@@ -318,7 +352,7 @@
 
             obtener_data_editar("#Na tbody",itable,"button.editar");
 
-
+             
 
 
 

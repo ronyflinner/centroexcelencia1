@@ -302,7 +302,7 @@ elemento{
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
                <h2 class="text-uppercase mb-0 py-1">    
-                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">Congreso de Prevención de Cáncer en Primer Nivel de Atención de Salud<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">Curso de Prevención de Cáncer en Primer Nivel de Atención de Salud<i class="fa fa-angle-down rotate-icon fa-2x"></i>
                    </a>
                </h2>
 

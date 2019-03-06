@@ -56,26 +56,21 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 	Route::resource('users', 'Admin\UsersController');
 	Route::post('users_mass_destroy', ['uses' => 'Admin\UsersController@massDestroy', 'as' => 'users.mass_destroy']);
 
-	// prensa
-	Route::get('interna', 'Admin\DisplayDataController@internacional')->name('internacional.index');
 
-	Route::get('statusEdit/{id?}', 'Admin\DisplayDataController@statusEdit')->name('status.index');
+	
+
+
 	Route::get('aceptarInscripcion', 'Admin\DocumentoSearchController@aceptarInscripcion')->name('aceptarInscripcion.index');
-
+	Route::get('denegarInscripcion', 'Admin\DocumentoSearchController@denegarInscripcion')->name('denegarInscripcion.index');
+    
 	Route::get('dataT', 'Admin\DocumentoSearchController@dataT')->name('dataT.index');
 	Route::get('buscarCurso', 'Admin\DocumentoSearchController@buscarCurso')->name('buscarCurso.index');
 
-	Route::resource('noticias', 'Admin\NoticiasController');
-	Route::resource('word', 'Admin\WordController');
-	Route::resource('media', 'Admin\MediaController');
-	Route::resource('foto', 'Admin\FotoController');
 
-	Route::resource('datat', 'Admin\DisplayDataController');
+
+
+
+
 	Route::resource('docsearch', 'Admin\DocumentoSearchController');
-	Route::resource('medisearch', 'Admin\MediaSearchController');
-	Route::resource('fotosearch', 'Admin\FotoSearchController');
-	Route::resource('noticiaeditar', 'Admin\NoticiaEditarController');
-	Route::resource('mediaeditar', 'Admin\MediaEditarController');
-	Route::resource('documentoeditar', 'Admin\DocumentoEditarController');
 
 });
