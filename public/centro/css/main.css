@@ -10,7 +10,7 @@ html { height: 100%;}
 .btn:focus,.btn:active {outline: none !important;box-shadow: none;}
 h1,h2,h3,h4,h5,h6,ul {margin:0px;padding:0px}
 ul {list-style-type: none;margin: 0;padding: 0;display: block;}
-li { display: inline-block;}
+
 a {cursor: pointer;}
 a:hover {text-decoration: none;}
 section .section-title {
