@@ -7,7 +7,7 @@
     </section>
 <br>
        <div class="section-title">
-            <h4 style="color: #606060; " align="center">Contacto</h4>
+            <h4 style="color: #606060; " align="center">Contácto</h4>
        </div>
 <div class="container">
 
@@ -42,11 +42,11 @@
                         </div>
                         <div class="form-group">
                             <label for="email">
-                                Correo Electronico</label>
+                                Correo Electrónico</label>
                             <div class="input-group">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
                                 </span>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa correo electronico" required="required" /></div>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa correo electrónico" required="required" /></div>
                         </div>
                         <div class="form-group">
                            <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
@@ -62,13 +62,13 @@
                     </div>
 
                     <div class="col-md-4 offset-4">
-                        
+
                         <button type="submit" class="btn btn-primary" id="btnContactUs">
                             Enviar mensaje</button>
                     </div>
-                    
+
                     <div class="col-md-4 d-flex">
-                      
+
                     </div>
                 </div>
                 </form>
@@ -76,17 +76,19 @@
         </div>
         <div class="col-md-4">
             <form>
-            <legend><span class="glyphicon glyphicon-globe"></span>Información General</legend>
-            <address>
-                Para mayor información comunicarse con Coordinación Académica<br>
-                Lic. Catya López Ampuero<br>
 
-                <abbr title="Phone">
-                    <a href="mailto:#">clopez@ligacancer.org.pe</a>
-                </abbr><br>
-                Teléfono: 204-0404
-                <br>Anexo: 244
+            <address>
+                <b>Para mayor información comunicarse con</b><br>
+                Lic. Catya López Ampuero<br>Coordinadora de Educación
+                <br>
+Central Telefónica: (01)204-0404 - Anexo 244
             </address>
+
+
+
+
+
+
 
             </form>
         </div>

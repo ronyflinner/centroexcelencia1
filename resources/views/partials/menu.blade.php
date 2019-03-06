@@ -11,7 +11,7 @@
         <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none"> <img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" > </div>
         <div class="d-none d-md-block d-lg-none d-xl-none"> <img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" > </div>
         <div class="d-none d-lg-block d-xl-none"> <img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" > </div>
-        <div class="d-none d-xl-block">  <a class="navbar-brand" href="index.html"><img  src="{{url('centro')}}/imagenes/Logotipo1.png" alt="logo" width="300" height="80">  </div>
+        <div class="d-none d-xl-block">  <a class="navbar-brand" href="{{ url('/') }}"><img  src="{{url('centro')}}/imagenes/Logotipo1.png" alt="logo" width="300" height="80">  </div>
 
        <img id="img2" >
 
@@ -37,12 +37,12 @@
             <li class="nav-item {{active_class(if_uri_pattern(['inscripcion'],'active','other'))}}">
               <a class="nav-link" href="{{ route('inscripcion.index') }}">Inscripción</a>
             </li>
-            <li class="nav-item {{active_class(if_uri_pattern(['sobrecancer'],'active','other'))}}">
-              <a class="nav-link" href="{{ route('sobrecancer.index') }}" >Sobre el Cáncer</a>
-            </li>
+           <!-- <li class="nav-item { {active_class(if_uri_pattern(['sobrecancer'],'active','other'))}}">
+              <a class="nav-link" href="{ { route('sobrecancer.index') }}" >Sobre el Cáncer</a>
+            </li>-->
 
             <li class="nav-item {{active_class(if_uri_pattern(['contactos2'],'active','other'))}}">
-              <a class="nav-link" href="{{ route('contactos2.index') }}">Contacto</a>
+              <a class="nav-link" href="{{ route('contactos2.index') }}">Contácto</a>
             </li>
 
             <li class="nav-item">

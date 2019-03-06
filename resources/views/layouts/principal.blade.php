@@ -50,9 +50,20 @@
     <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
      <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
 
+    <script src="{{url('centro')}}/js/jquery.mask.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="{{url('centro')}}/css/parsley.css">
+    <script src="{{url('centro')}}/js/parsley.min.js"></script>
+    <script src="{{url('centro')}}/js/i18n/es.js"></script>
+
   <!-- Include to use $addClass, $toggleClass or $removeClass -->
 
 <script>
+
+
+
    if ($(window).width() < 960) {
       $('#img2').css('src', 'imagenes/Logotipo.png');
     }
