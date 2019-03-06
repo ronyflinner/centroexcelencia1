@@ -50,6 +50,8 @@
     <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script>
      <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
 
+  <script src="{{url('centro')}}/js/jquery.mask.min.js"></script>
+
   <!-- Include to use $addClass, $toggleClass or $removeClass -->
 
 <script>

@@ -1,19 +1,20 @@
 @extends('layouts.principal')
 @section('content')
+<!--   @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');-->
     <style type="text/css">
-              @import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald');
+
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Rubik', sans-serif;
         }
 
         h1 {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Rubik', sans-serif;
         }
 
         p {
-            font-family: 'Montserrat', sans-serif;
+            font-family: 'Rubik', sans-serif;
         }
 
         .image-wrap {
@@ -71,6 +72,91 @@
         .btn-green {
             background-color: #4CAF50;
         }
+
+        .cambiar{
+            background-image:  url('{{ url('centro')}}/imagenes/img2/Imagen-3.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+         .cambiar img{
+                width: 350px;
+                 height: 350px
+            }
+        @media screen and (max-width: 425px) {
+            .cambiar {background-image:  url('{{ url('centro')}}/imagenes/fondo-rojo.png');}
+
+             .cambiar img{
+                 width: 300px;
+                 height: 350px
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+           .cambiar {background-image:  url('{{ url('centro')}}/imagenes/fondo-rojo.png');
+            }
+
+            .cambiar img{
+                 width: 300px;
+                 height: 350px
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+          .cambiar {background-image:  url('{{ url('centro')}}/imagenes/fondo-rojo.png');}
+        }
+
+      /*card*/
+      .card {
+        margin: 0 auto;
+      }
+      .card .carousel-item {
+        height: 350px;
+      }
+
+
+      .card .carousel-caption {
+        padding: 0;
+        right: 0;
+        left: 0;
+        color: #3d3d3d;
+      }
+      .card .carousel-caption h3 {
+        color: #3d3d3d;
+      }
+      .card .carousel-caption p {
+        line-height: 30px;
+      }
+      .card .carousel-caption .col-sm-3 {
+        display: flex;
+        align-items: center;
+      }
+      .card .carousel-caption .col-sm-9 {
+        text-align: left;
+      }
+      .navi a {
+          text-decoration:none;
+      }
+      a > .ico {8e
+          background-color: grey;
+          padding: 10px;
+
+      }
+      a:hover > .ico {
+          background-color: #666;
+      }
+
+      @media screen and (max-device-width : 480px) {
+         .card .carousel-item {
+        height: 400px;
+      }
+
+      .smallColor{
+        color:white;
+      }
+
+
     </style>
 
 
@@ -85,21 +171,21 @@
 
        </div>
       <div style="position: relative;">
-            <div class="d-inline d-sm-none" style="position: absolute; left: 34%; top: 380px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red;">Inscribete Aquí</button> </a></div>
+            <div class="d-inline d-sm-none" style="position: absolute; left: 34%; top: 380px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red;">Inscríbete Aquí</button> </a></div>
 
             <div class="d-none d-sm-inline d-md-none" style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
-              <span>Inscribete Aquí</span>
+              <span>Inscríbete Aquí</span>
             </button></a></div>
 
             <div class="d-none d-md-inline d-lg-none " style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
-              <span>Inscribete Aquí</span>
+              <span>Inscríbete Aquí</span>
             </button></a></div>
 
             <div class="d-none d-lg-inline d-xl-none" style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
-              <span>Inscribete Aquí</span>
+              <span>Inscríbete Aquí</span>
             </button></a></div>
 
-            <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscribete Aquí</button> </a></div>
+            <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscríbete Aquí</button> </a></div>
        </div>
 
       <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slides-3.png" style="width: 380px" alt="First slide">
@@ -130,43 +216,6 @@
 
 
 
-<style type="text/css">
-  .cambiar{
-    background-image:  url('{{ url('centro')}}/imagenes/img2/Imagen-3.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
- .cambiar img{
-        width: 350px;
-         height: 350px
-    }
-@media screen and (max-width: 425px) {
-    .cambiar {background-image:  url('{{ url('centro')}}/imagenes/fondo-rojo.png');}
-
-     .cambiar img{
-         width: 300px;
-         height: 350px
-    }
-}
-
-@media screen and (max-width: 375px) {
-   .cambiar {background-image:  url('{{ url('centro')}}/imagenes/fondo-rojo.png');
-    }
-
-    .cambiar img{
-         width: 300px;
-         height: 350px
-    }
-}
-
-@media screen and (max-width: 320px) {
-  .cambiar {background-image:  url('{{ url('centro')}}/imagenes/fondo-rojo.png');}
-}
-
-</style>
-
 <section id="porta">
  <div class="container-fluid">
     <div class="row cambiar" style="height: 470px;">
@@ -189,68 +238,38 @@
 
 </section>
 
-<style type="text/css">
-  .card {
-  margin: 0 auto;
-}
-.card .carousel-item {
-  height: 350px;
-}
 
-
-.card .carousel-caption {
-  padding: 0;
-  right: 0;
-  left: 0;
-  color: #3d3d3d;
-}
-.card .carousel-caption h3 {
-  color: #3d3d3d;
-}
-.card .carousel-caption p {
-  line-height: 30px;
-}
-.card .carousel-caption .col-sm-3 {
-  display: flex;
-  align-items: center;
-}
-.card .carousel-caption .col-sm-9 {
-  text-align: left;
-}
-.navi a {
-    text-decoration:none;
-}
-a > .ico {8e
-    background-color: grey;
-    padding: 10px;
-
-}
-a:hover > .ico {
-    background-color: #666;
-}
-
-@media screen and (max-device-width : 480px) {
-   .card .carousel-item {
-  height: 400px;
-}
-
-} ;
-
-</style>
 
 <section class="card col-md-12 " style="background:url('{{ url('centro') }}/imagenes/imagen-1.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;" >
   <div id="carouselExampleControls" class="carousel slide " data-ride="carousel" data-interval="10000">
     <div class="w-100 carousel-inner " role="listbox" >
-      <div class="carousel-item active" >
+
+    <div class="carousel-item active" >
+        <div class="carousel-caption">
+              <br>
+              <div class="row d-flex justify-content-center">
+                <div class="col-xs-12 ">
+                     <img src="{{ url('centro') }}/imagenes/directivos/Dr. José Jerónimo Guibovich.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
+                     <h3 style="color:white">Dr. José Jerónimo Guibovich </h3><br>
+                     <h5 style="color:white">Director de Asuntos Internacionales </h5>
+                     <small style="color:white;">Liga Contra el Cáncer</small>
+
+                </div>
+
+              </div>
+        </div>
+      </div>
+      <div class="carousel-item " >
         <div class="carousel-caption">
               <br>
               <div class="row d-flex justify-content-center">
                 <div class="col-xs-12 ">
                      <img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
                      <h3 style="color:white">Dr. Raúl Velarde Galdós </h3><br>
-                      <h4 style="color:white">Director Médico de Liga Contra el Cáncer</h4>
+                     <h5 style="color:white">Director Médico </h5>
+                     <small style="color:white;">Liga Contra el Cáncer</small>
 
                 </div>
 
@@ -264,7 +283,8 @@ a:hover > .ico {
                 <div class="col-xs-12 ">
                      <img src="{{ url('centro') }}/imagenes/directivos/Lic.-Lopez-Ampuero,-Catya-Luz.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
                      <h3 style="color:white">Lic. Catya López Ampuero </h3><br>
-                      <h4 style="color:white">Coordinadora</h4>
+                     <h5 style="color:white">Coordinadora de Educación</h5>
+                     <small style="color:white;">Liga Contra el Cáncer</small>
 
                 </div>
 

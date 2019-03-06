@@ -29,7 +29,7 @@
 <style type="text/css">
  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 figure.snip0078 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   color: #fff;
   position: relative;
   float: left;
@@ -75,7 +75,7 @@ figure.snip0078 figcaption p {
 }
 figure.snip0078 figcaption h2 {
   font-weight: 400;
-  
+
 }
 figure.snip0078 figcaption h2 span {
   font-weight: 800;
@@ -180,7 +180,7 @@ ul{
     color:#3c3c3c;
   font-size:24px;
   font-weight:500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   padding: 10px 0;
 }
 .practice-area .inner p{
@@ -278,8 +278,9 @@ elemento{
 <style type="text/css">
   .contenedor{
     position: relative;
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: center;
+
    }
 
 .texto-encima{
@@ -301,8 +302,8 @@ elemento{
    <div class="accordion accordion-1" id="accordionEx23" role="tablist">
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
-               <h2 class="text-uppercase mb-0 py-1">    
-                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">Congreso de Prevención de Cáncer en Primer Nivel de Atención de Salud<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+               <h2 class="text-uppercase mb-0 py-1">
+                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">1ER CURSO INTERNACIONAL EN CONTROL DE CÁNCER PARA PRIMERA NIVEL DE ATENCIÓN<i class="fa fa-angle-down rotate-icon fa-2x"></i>
                    </a>
                </h2>
 
@@ -342,11 +343,11 @@ elemento{
             <div class="container">
             <div class="mb-3"></div>
             <div class="cnt-block equal-hight">
-            <h5 style="color:white" align="center">Curso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>
+          <!-- <h5 style="color:white" align="center">Curso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>-->
              <div class="mb-2"></div>
             <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
             <div class="mb-2" ></div>
-            <h6 align="center" style="color:white">Fecha de inicio: 9 y 10 de abril</h6>
+            <h6 align="center" style="color:white">Fecha de inicio: 09 y 10 de abril</h6>
             <div class="mb-2"></div>
             <h6 align="center" style="color:white">Lugar: Hotel Sol de Oro, Calle San Martín 305 miraflores</h6>
            <div class="mb-2"></div>
@@ -387,19 +388,28 @@ elemento{
 <div class="container">
   <br>
   <div class="section-title">
-            <h4 style="font-size:30px; color: #606060;">Precio</h4>
+            <h4 style="font-size:30px; color: #606060;">INSCRIPCIÓN</h4>
   </div>
   <div class="row">
   <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
-        <a href="{{route('inscripcion.index')}}"><div class="contenedor">
-        <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
+        <a href="{{route('inscripcion.index')}}">
 
+      <div class="contenedor">
+        <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
+        <h5 style="color:white">Médicos Especialistas</h5>
         <div class="texto-encima"></div>
-        <div class="centrado"> <h5 style="color:white">Médicos Especialistas</h5>
-                <h7 style="color:white">Precio : S/. 250</h7>
-                <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento : S/. 300</p></div>
-        </div></a>
+        <div class="centrado">
+
+                  <h5 style="color:white">Médicos Especialistas</h5>
+                  <h7 style="color:white">Incripción :<br> 250 soles</h7>
+                  <div style="color:white" class="md-3"></div>
+                  <p style="font-size: 11px; color:white;" >Día del envento:  300 soles</p>
+
+        </div>
+
+
+        </div>
+    </a>
   </div>
     <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
         <a href="{{route('inscripcion.index')}}"><div class="contenedor">
@@ -407,7 +417,7 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Médicos Generales</h5>
-                <h7 style="color:white">Precio : S/. 200</h7>
+                <h7 style="color:white">Incripción : S/. 200</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento: S/. 250</p></div>
         </div></a>
@@ -419,7 +429,7 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Otros Profesionales</h5>
-                <h7 style="color:white">Precio : S/. 180</h7>
+                <h7 style="color:white">Incripción : S/. 180</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento: S/. 200</p></div>
         </div></a>
@@ -430,7 +440,7 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Internos</h5>
-                <h7 style="color:white">Precio : S/. 100</h7>
+                <h7 style="color:white">Incripción : S/. 100</h7>
                 <div style="color:white" class="md-3"></div>
                 <p style="font-size: 11px; color:white;" >Día del envento: S/. 150</p></div>
         </div></a>
@@ -442,7 +452,7 @@ elemento{
                </div>
            </div>
        </div>
-       <div class="card" data-aos="fade-up" data-aos-delay="300">
+    <!--   <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading98">
                <h2 class="text-uppercase mb-0 py-1">
                    <a class="collapsed" data-toggle="collapse" href="#collapse98" aria-expanded="false" aria-controls="collapse98" style="font-size: 16px; text-transform:none;" > <span class="glyphicon glyphicon-ok" style="color:blue"></span>
@@ -498,10 +508,10 @@ elemento{
   </div>
 
 
-</section>
+</section>-->
 
 
-<div class="container">
+<!--<div class="container">
   <br>
   <div class="section-title">
             <h4 style="font-size:30px; color: #606060;">Precio</h4>
@@ -534,7 +544,7 @@ elemento{
 
 
 </div>
-</div>
+</div>-->
                </div>
            </div>
        </div>
@@ -569,7 +579,7 @@ elemento{
     text-align: center;
     margin: 0 0 40px;
     padding-bottom: 20px;
-   
+
 }
 ul{
   margin:0;
@@ -689,7 +699,7 @@ ul{
      <div class="row">
 
             <div class="col-md-2 col-sm-12" >
-                 
+
             </div>
             <div class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
@@ -699,8 +709,39 @@ ul{
                  <img id="imgG" src="{{ url('centro') }}/imagenes/img2/Icon-Certificacion.png" alt="Avatar" style="height :100px">
                </div>
                <h2 align="center">CERTIFICACIÓN</h2>
-               <p align="center">Se otorgarán con el número de créditos otorgado por los colegios profesionales y La Liga Contra el Cáncer.</p>
+               <p align="center">Se otorgará con el número de créditos brindados por los colegios profesionales: </p>
+
+              <div class="row">
+
+                <div class="d-flex flex-row bd-highlight mb-3">
+                  <div class="p-2 bd-highlight">
+                     <a href="https://www.cmp.org.pe/">
+                      <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
+                    </a>
+                  </div>
+                  <div class="p-1 bd-highlight">
+                     <a href="https://www.cep.org.pe/ ">
+                       <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
+                    </a>
+                  </div>
+                  <div class="p-1 bd-highlight">
+                     <a href="http://www.usmp.edu.pe/fobstetri/escuelas/obstetricia/index.php">
+                       <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
+                    </a>
+                  </div>
+                   <div class="p-1 bd-highlight">
+                      <a href="http://www.usmp.edu.pe/fobstetri/escuelas/obstetricia/index.php">
+                         <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
+                      </a>
+                  </div>
+
+
+                </div>
+
+              </div>
+
             </div>
+
 
 
             <div class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;

@@ -4,7 +4,7 @@
 ===============================================*/
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
 *:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
-body {width: 100%;margin: 0px;padding: 0px;font-size: 16px;line-height: 1.8;overflow-x: hidden;background-color: #fff;font-family: 'Montserrat', sans-serif;}
+body {width: 100%;margin: 0px;padding: 0px;font-size: 16px;line-height: 1.8;overflow-x: hidden;background-color: #fff;font-family: 'Rubik', sans-serif;}
 body,
 html { height: 100%;}
 .btn:focus,.btn:active {outline: none !important;box-shadow: none;}
@@ -30,10 +30,10 @@ a:hover {
 }
 
 h1,h2,h3,h4,h5{
-       font-family: 'Open Sans', sans-serif;
+       font-family: 'Rubik','Open Sans', sans-serif;
 }
 p, ul,li{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik','Open Sans', sans-serif;
     font-size: 14px;
     line-height: 25px;
 }
@@ -68,7 +68,7 @@ textarea {resize: none;}
   font-size:13px;
   text-transform: none;
   font-style: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 ::-moz-placeholder { /* Firefox 19+ */
   color: #fff;
@@ -76,7 +76,7 @@ textarea {resize: none;}
   font-size:13px;
   text-transform: none;
   font-style: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 :-ms-input-placeholder { /* IE 10+ */
   color: #fff;
@@ -84,7 +84,7 @@ textarea {resize: none;}
   font-size:13px;
   text-transform: none;
   font-style: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #fff;
@@ -92,7 +92,7 @@ textarea {resize: none;}
   font-size:13px;
   text-transform: none;
   font-style: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 ::placeholder {
   color: #fff;
@@ -100,7 +100,7 @@ textarea {resize: none;}
   font-size:13px;
   text-transform: none;
   font-style: normal;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 /*==============================
       // Nav-bar Styles //
@@ -108,9 +108,23 @@ textarea {resize: none;}
 nav {z-index: 999;transition: all 0.3s;}
 .navbar {padding: 50px 0;z-index: 9999;}
 .navbar-brand {margin-top: -15px;}
-.navbar-dark .navbar-nav .active>.nav-link {color: rgb(0, 0, 0); border-bottom: 3px solid red;}
-.navbar-expand-lg .navbar-nav .nav-link {color: black;font-size: 12px;padding-right: 25px;padding-left: 25px;padding: .2rem 1rem;font-weight: 500;text-transform: none;}
-.navbar-dark .navbar-nav .nav-link:hover {color: rgb(0, 0,0); border-bottom: 3px solid red;}
+
+.navbar-expand-lg .navbar-nav .nav-link {color: black;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding: .0.4rem 0.6rem;
+    font-weight: 500;
+    text-transform: none;}
+
+/*
+color: rgb(0, 0, 0); border-bottom: 1px solid red;
+*/
+.navbar-dark .navbar-nav .active>.nav-link {
+    color: #d83434;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {color: red; } /*border-bottom: 3px solid red;*/
 .navbar-dark .navbar-nav .active:after {display: none;}
 .navbar-dark .navbar-nav li:last-child:after { display: none;}
 .navbar-dark .navbar-nav li:last-child {margin-right: -25px;}
@@ -956,7 +970,7 @@ textarea.form-control {
     font-weight: 400;
     line-height: 51px;
     padding: 40px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 #blog-page .heading2 {
     font-size: 39px;
@@ -965,7 +979,7 @@ textarea.form-control {
     padding: 30px 0;
     color: #363636;
     text-transform: capitalize;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 #blog-page .social-links li {
     width: 120px;
@@ -979,7 +993,7 @@ textarea.form-control {
     text-align: center;
     display: inline-block;
     list-style-type: none;
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: 'Rubik', sans-serif;
     
 }
 #blog-page .social-links {
@@ -1965,7 +1979,7 @@ font-size: 24px;
 
  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 figure.snip0078 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: 'Rubik', Arial, sans-serif;
   color: #fff;
   position: relative;
   float: left;
@@ -2104,7 +2118,7 @@ ul{
     color:#3c3c3c;
   font-size:24px;
   font-weight:500;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
   padding: 10px 0;
 }
 .practice-area .inner p{
