@@ -333,7 +333,7 @@ jQuery(document).ready(function($) {
                 margin: 30,
                 stagePadding: 30,
                 smartSpeed: 450,
-                navigation : false,
+                navigation : true,
                 slideSpeed : 300,
                 singleItem: true,
                 autoPlay : true,

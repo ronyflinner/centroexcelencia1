@@ -24,54 +24,50 @@
                     <div class="form-group">
                             <label for="name">
                                 Nombre</label>
-                            <input type="text" class="form-control" name="name" placeholder="Ingresa nombre" required="required" />
+                            <input type="text" class="form-control" data-parsley-required name="name" placeholder="Ingresa nombre" />
                         </div>
                   </div>
-                   <div class="col-md-6">
-                      <div class="form-group">
-                            <label for="email">
+
+                    <div class="col-md-6">
+                       <div class="form-group">
+                            <label for="name">
                                 DNI</label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="text" class="form-control dni" id="dni" name="dni" placeholder="Ingresa DNI" required="required" /></div>
+                      <input type="text" class="form-control dni" data-parsley-required id="dni" name="dni" placeholder="Ingresa DNI"   />
                         </div>
                    </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                     <div class="form-group">
-                            <label for="email">
-                                Correo Electrónico</label>
-                            <div class="input-group">
-                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
-                                </span>
-                                <input type="email" class="form-control" name="email" placeholder="Ingresa correo electrónico" required="required" /></div>
+                   <div class="col-md-6">
+                       <div class="form-group">
+                            <label for="name">
+                                DNI</label>
+                      <input type="email" class="form-control" name="email" data-parsley-required placeholder="Ingresa correo electrónico"  data-parsley-type="email"   />
                         </div>
-                  </div>
+                   </div>
                    <div class="col-md-6">
                        <div class="form-group">
                             <label for="name">
                                 Número telefónico</label>
-                      <input type="text" class="form-control" name="cell" placeholder="Ingresa tu número telefónico" required="required" />
+                      <input type="text" class="form-control telefono" data-parsley-required  name="cell" placeholder="Ingresa tu número telefónico"  />
                         </div>
                    </div>
                 </div>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">
-                              <label for="exampleFormControlSelect1">Seleccionar Curso</label>
-                              <select class="form-control" id="exampleFormControlSelect1" name="curso">
-
-                                <option value="1">Curso de Prevención de Cancer en Primer Nivel de Atención de Salud </option>
-                                <option value="2">Curso de Asesoria Genética de Cancer Dirigido al Perimer Nivel de Atención de Salud</option>
-                              </select>
-                          </div>
+                          <label for="exampleFormControlSelect1">Seleccionar Curso</label>
+                          <select class="form-control" id="exampleFormControlSelect1" data-parsley-required name="curso">
+                            <option value="" selected="">Selecionar </option>
+                            <option value="1">Curso de Prevención de Cancer en Primer Nivel de Atención de Salud </option>
+                            <option value="2">Curso de Asesoria Genética de Cancer Dirigido al Perimer Nivel de Atención de Salud</option>
+                          </select>
+                    </div>
                   </div>
                    <div class="col-md-6">
                       <div class="form-group">
                               <label for="exampleFormControlSelect1">Seleccionar tipo de participante</label>
-                              <select class="form-control" id="exampleFormControlSelect1" name="tipo">
+                              <select class="form-control" data-parsley-required  id="exampleFormControlSelect1" name="tipo">
+                                 <option value="" selected="">Selecionar </option>
                                 <option value="1">Médicos Especialistas </option>
                                 <option value="2">Médicos Generales</option>
                                 <option value="3">Otras Profesiones</option>
@@ -89,7 +85,7 @@
                         <label class="custom-file-upload form-control">
                           <i class="fa fa-cloud-upload"></i> Añadir voucher de pago
                         </label>
-                        <input class="file-upload" name="archivo" type="file">
+                        <input class="file-upload" data-parsley-required name="archivo" type="file">
                       </div>
                    </div>
                 </div>
@@ -104,7 +100,7 @@
                 </div>
 
                 <div class="container mt-3">
-                  <label class="checkbox-inline"><input type="radio" name='contrato' checked="" value="1"> Acuerdo</label>
+                  <label class="checkbox-inline"><input type="radio" name='contrato'data-parsley-required  checked="" value="1"> Acuerdo</label>
                   <label class="checkbox-inline"><input type="radio" name='contrato' value=""> Desacuerdo</label>
                 </div>
 
@@ -151,7 +147,19 @@ font-family: 'Open Sans', sans-serif;
 
 $(function() {
 
+
+    $('#avatarForm').on('submit', function(event){
+        event.preventDefault();
+        form_to=$(this);
+
+      if($('#avatarForm').parsley().isValid())
+        {
+          document.getElementById("avatarForm").submit();
+        }
+    });
+
    $('.dni').mask('000000000');
+   $('.telefono').mask('(51)000000000');
     // Remove button click
     $(document).on(
         'click',

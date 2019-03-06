@@ -401,9 +401,9 @@ elemento{
         <div class="centrado">
 
                   <h5 style="color:white">Médicos Especialistas</h5>
-                  <h7 style="color:white">Incripción :<br> 250 soles</h7>
+                  <h7 style="color:white">Incripción <br> 250 soles</h7>
                   <div style="color:white" class="md-3"></div>
-                  <p style="font-size: 11px; color:white;" >Día del envento:  300 soles</p>
+                  <p class="text-center" style="font-size: 11px; color:white;" >Día del envento<br> 300 soles</p>
 
         </div>
 
@@ -417,9 +417,9 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Médicos Generales</h5>
-                <h7 style="color:white">Incripción : S/. 200</h7>
+                <h7 style="color:white">Incripción <br> 200 soles</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento: S/. 250</p></div>
+                <p class="text-center"  style="font-size: 11px; color:white;" >Día del envento <br> 250 soles</p></div>
         </div></a>
   </div>
 
@@ -429,9 +429,9 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Otros Profesionales</h5>
-                <h7 style="color:white">Incripción : S/. 180</h7>
+                <h7 style="color:white">Incripción <br> 180 soles</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento: S/. 200</p></div>
+                <p class="text-center" style="font-size: 11px; color:white;" >Día del envento <br> 200 soles</p></div>
         </div></a>
   </div>
   <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
@@ -440,9 +440,9 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Internos</h5>
-                <h7 style="color:white">Incripción : S/. 100</h7>
+                <h7 style="color:white">Incripción <br> 100 soles</h7>
                 <div style="color:white" class="md-3"></div>
-                <p style="font-size: 11px; color:white;" >Día del envento: S/. 150</p></div>
+                <p class="text-center" style="font-size: 11px; color:white;" >Día del envento <br> 150 soles</p></div>
         </div></a>
   </div>
 
