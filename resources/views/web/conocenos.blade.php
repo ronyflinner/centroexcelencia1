@@ -270,7 +270,7 @@
                  <img id="imgG" src="{{ url('centro') }}/imagenes/img2/mision.png" alt="Avatar" style="height:100px">
                </div>
                <h2 align="center" style="color:white">MISIÓN</h2>
-               <p  align="center" style="color:white">Posicionarnos como Centro de Excelencia líder en prevención de cáncer en el Perú.</p>
+               <p  align="center" style="color:white">Promover la capacitación de los profesionales de salud de todos los niveles de atención en prevención primaria y secundaria de los diversos tipos de cáncer.</p>
             </div>
 
             <div class="col-md-4 col-sm-12 offset-md-4" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
@@ -281,7 +281,7 @@
                  <img id="imgG" src="{{ url('centro') }}/imagenes/img2/mision.png" alt="Avatar" height="100px">
                </div>
                <h2 align="center" style="color:white">VISIÓN</h2>
-               <p align="center" style="color:white">Posicionarnos como Centro de Excelencia Líder en Prevención de Cáncer en el Perú.</p>
+               <p align="center" style="color:white">Posicionarnos como Centro de Excelencia líder en prevención de cáncer en el Perú.</p>
             </div>
 
 
@@ -306,8 +306,8 @@
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr-AguilarRamosPedro.png" class="img-responsive" alt=""></figure>
 
-            <span style="font-size: 22px;"><br> Dr. Aguilar Ramos Pedro </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dr. Aguilar Ramos Pedro </span><br>
+            <small style="font-size:12px;">Ginecólogo Oncólogo</small>
 
 
           </div>
@@ -315,16 +315,16 @@
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Grisson-Barron,-Gilmar.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Dr. Grisson Barron, Gilmar</span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dr. Grisson Barron, Gilmar</span><br>
+            <small style="font-size:12px;">Cirujano Oncólogo</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Lama-Calle,-Carlos.png" class="img-responsive" alt=""></figure>
 
-            <span style="font-size: 22px;"><br> Dr. Lama Calle, Carlo </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dr. Lama Calle, Carlo </span><br>
+            <small style="font-size:12px;">Ginecólogo Oncólogo</small>
 
           </div>
       </li>
@@ -332,8 +332,8 @@
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-López-Blanco,-Aldo.png" class="img-responsive" alt=""></figure>
 
-            <span style="font-size: 22px;"><br> Dr. López Blanco, Aldo </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dr. López Blanco, Aldo </span><br>
+            <small style="font-size:12px;">Ginecólogo Oncólogo</small>
           </div>
       </li>
     </ul>
@@ -343,30 +343,34 @@
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" class="img-responsive" alt=""></figure>
-             <span style="font-size: 22px;"><br>Dr. Velarde Galdos, Raúl </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+             <span style="font-size: 18px;"><br>Dr. Velarde Galdos, Raúl </span><br>
+            <small style="font-size:12px;">
+              Director Médico de la Liga Contra el Cáncer
+Ginecólogo Oncólogo de mamas y tejidos blandos
+
+            </small>
 
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Mendez,-Marco.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Dr. Velarde Méndez, Marco </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dr. Velarde Méndez, Marco </span><br>
+            <small style="font-size:12px;">Cirujano Oncólogo de mamas y tejidos blandos</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Carrasco-Collantes,-Marcia.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Dra. Carrasco Collantes, Marcia </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dra. Carrasco Collantes, Marcia </span><br>
+            <small style="font-size:12px;">Cirujana Oncóloga de senos y tumores mixtos</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Malca-Tocas,-Mirtha.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Dra. Malca Tocas, Mirtha </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Dra. Malca Tocas, Mirtha </span><br>
+            <small style="font-size:12px;">Ginecóloga Oncóloga</small>
           </div>
       </li>
     </ul>
@@ -377,29 +381,29 @@
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Gonzales-Cabrera-,-Magali-Jovana.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Lic. Gonzáles Cabrera , Magali Jovana  </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Lic. Gonzáles Cabrera , Magali Jovana  </span><br>
+            <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Lopez-Ampuero,-Catya-Luz.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Lic. López Ampuero, Catya Luz </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Lic. López Ampuero, Catya Luz </span><br>
+            <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Medrano-Guillen,-Claudia-Nathaly.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 22px;"><br> Lic. Medrano Guillen, Claudia Nathaly  </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+            <span style="font-size: 18px;"><br> Lic. Medrano Guillen, Claudia Nathaly  </span><br>
+            <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Torres-Campos,-Clerk-Oriele.png" class="img-responsive" alt=""></figure>
-             <span style="font-size: 22px;"><br> Lic. Torres Campos, Clerk Oriele  </span><br>
-            <small style="font-size:18px;">Especialidad</small>
+             <span style="font-size: 18px;"><br> Lic. Torres Campos, Clerk Oriele  </span><br>
+            <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
     </ul>

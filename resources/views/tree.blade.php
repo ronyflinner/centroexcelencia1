@@ -167,10 +167,8 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <div style="position: relative;">
 
-       </div>
-      <div style="position: relative;">
+      <div style="position: relative;" style="background-image: url({{ url('centro')}}/imagenes/Slides-3.png);">
             <div class="d-inline d-sm-none" style="position: absolute; left: 34%; top: 380px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red;">Inscríbete Aquí</button> </a></div>
 
             <div class="d-none d-sm-inline d-md-none" style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
@@ -188,11 +186,11 @@
             <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscríbete Aquí</button> </a></div>
        </div>
 
-      <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slides-3.png" style="width: 380px" alt="First slide">
-      <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slides.png" alt="First slide">
-      <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slides.png" alt="First slide">
-      <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slides.png" alt="First slide">
-      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider.png" alt="First slide">
+      <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slides-sm-final.png" style="width: 380px" alt="First slide">
+      <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
+      <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
+      <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
+      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
     </div>
    <!--  <div class="carousel-item" >
       <div style="position: relative;">

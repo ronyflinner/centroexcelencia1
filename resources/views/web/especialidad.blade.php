@@ -382,9 +382,6 @@ elemento{
   </div>
 </div>
 
-
-
-
 <div class="container">
   <br>
   <div class="section-title">
@@ -713,27 +710,30 @@ ul{
 
               <div class="row">
 
-                <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="d-flex justify-content-center  mb-3">
                   <div class="p-2 bd-highlight">
-                     <a href="https://www.cmp.org.pe/">
-                      <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
-                    </a>
-                  </div>
-                  <div class="p-1 bd-highlight">
-                     <a href="https://www.cep.org.pe/ ">
-                       <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
+                     <a href="https://www.cep.org.pe/">
+                      <img src="{{ url('centro') }}/imagenes/logo/Afiche-CEPC.png" class="hvr-grow-shadow" alt="" width="70px" height="70px">
                     </a>
                   </div>
                   <div class="p-1 bd-highlight">
                      <a href="http://www.usmp.edu.pe/fobstetri/escuelas/obstetricia/index.php">
-                       <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
+                       <img src="{{ url('centro') }}/imagenes/logo/Afiche-CEPC-1.png" class="hvr-grow-shadow" alt="" width="70px" height="70px">
+                    </a>
+                  </div>
+                  <div class="p-1 bd-highlight">
+                     <a href="https://www.cmp.org.pe/">
+                       <img src="{{ url('centro') }}/imagenes/logo/Afiche-CEPC-2.png" class="hvr-grow-shadow" alt="" width="70px" height="70px">
                     </a>
                   </div>
                    <div class="p-1 bd-highlight">
-                      <a href="http://www.usmp.edu.pe/fobstetri/escuelas/obstetricia/index.php">
-                         <img src="{{ url('centro') }}/imagenes/Logo-LCC-240x240.png" alt="" width="80px" height="80px">
-                      </a>
+                     <a href="">
+                       <img src="{{ url('centro') }}/imagenes/logo/Afiche-CEPC-3.png" class="hvr-grow-shadow" alt="" width="70px" height="70px">
+                    </a>
                   </div>
+
+
+
 
 
                 </div>
