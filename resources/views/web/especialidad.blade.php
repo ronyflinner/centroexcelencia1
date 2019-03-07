@@ -302,8 +302,13 @@ elemento{
    <div class="accordion accordion-1" id="accordionEx23" role="tablist">
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
+
+               <h2 class="text-uppercase mb-0 py-1">    
+                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">Curso de Prevención de Cáncer en Primer Nivel de Atención de Salud<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+
                <h2 class="text-uppercase mb-0 py-1">
                    <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">1ER CURSO INTERNACIONAL EN CONTROL DE CÁNCER PARA PRIMERA NIVEL DE ATENCIÓN<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+
                    </a>
                </h2>
 
