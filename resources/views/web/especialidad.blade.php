@@ -303,8 +303,7 @@ elemento{
        <div class="card" data-aos="fade-up" data-aos-delay="300">
            <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
 
-               <h2 class="text-uppercase mb-0 py-1">    
-                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">Curso de Prevención de Cáncer en Primer Nivel de Atención de Salud<i class="fa fa-angle-down rotate-icon fa-2x"></i>
+
 
                <h2 class="text-uppercase mb-0 py-1">
                    <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">1ER CURSO INTERNACIONAL EN CONTROL DE CÁNCER PARA PRIMERA NIVEL DE ATENCIÓN<i class="fa fa-angle-down rotate-icon fa-2x"></i>
@@ -346,7 +345,7 @@ elemento{
         <div class="d-flex justify-content-center" style="border-right: 2px solid white; border-left: 2px solid white; height: 350px; ">
           <div class="container d-flex align-items-center">
             <div class="container">
-            <div class="mb-3"></div>
+
             <div class="cnt-block equal-hight">
           <!-- <h5 style="color:white" align="center">Curso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>-->
              <div class="mb-2"></div>
@@ -355,7 +354,7 @@ elemento{
             <h6 align="center" style="color:white">Fecha de inicio: 09 y 10 de abril</h6>
             <div class="mb-2"></div>
             <h6 align="center" style="color:white">Lugar: Hotel Sol de Oro, Calle San Martín 305 miraflores</h6>
-           <div class="mb-2"></div>
+           <div class="mb-2"></div><br>
             <div class="d-flex justify-content-center">
               <a class="btn btn-primary btn-download" href="{{ url('/') }}/words/pdfcongreso.pdf" download="CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD.pdf" style="background: white; border: 0px; color:red;"><span class="glyphicon glyphicon-ok"></span> Descargar Temario</a>
 
@@ -402,10 +401,10 @@ elemento{
         <div class="texto-encima"></div>
         <div class="centrado">
 
-                  <h5 style="color:white">Médicos Especialistas</h5>
-                  <h7 style="color:white">Incripción <br> 250 soles</h7>
-                  <div style="color:white" class="md-3"></div>
-                  <p class="text-center" style="font-size: 11px; color:white;" >Día del envento<br> 300 soles</p>
+            <h5 style="color:white">Médicos Especialistas</h5>
+            <h7 style="color:white">Pre Incripción <br> 250 soles</h7>
+            <div style="color:white" class="md-3"></div>
+            <p class="text-center" style="font-size: 11px; color:white;" >Día del evento<br> 300 soles</p>
 
         </div>
 
@@ -419,9 +418,9 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Médicos Generales</h5>
-                <h7 style="color:white">Incripción <br> 200 soles</h7>
+                <h7 style="color:white">Pre Incripción  200 soles</h7>
                 <div style="color:white" class="md-3"></div>
-                <p class="text-center"  style="font-size: 11px; color:white;" >Día del envento <br> 250 soles</p></div>
+                <p class="text-center"  style="font-size: 11px; color:white;" >Día del evento <br> 250 soles</p></div>
         </div></a>
   </div>
 
@@ -431,9 +430,9 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Otros Profesionales</h5>
-                <h7 style="color:white">Incripción <br> 180 soles</h7>
+                <h7 style="color:white">Pre Incripción  180 soles</h7>
                 <div style="color:white" class="md-3"></div>
-                <p class="text-center" style="font-size: 11px; color:white;" >Día del envento <br> 200 soles</p></div>
+                <p class="text-center" style="font-size: 11px; color:white;" >Día del evento <br> 200 soles</p></div>
         </div></a>
   </div>
   <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
@@ -442,9 +441,9 @@ elemento{
 
         <div class="texto-encima"></div>
         <div class="centrado"> <h5 style="color:white">Internos</h5>
-                <h7 style="color:white">Incripción <br> 100 soles</h7>
+                <h7 style="color:white">Pre Incripción  100 soles</h7>
                 <div style="color:white" class="md-3"></div>
-                <p class="text-center" style="font-size: 11px; color:white;" >Día del envento <br> 150 soles</p></div>
+                <p class="text-center" style="font-size: 11px; color:white;" >Día del evento <br> 150 soles</p></div>
         </div></a>
   </div>
 
@@ -711,7 +710,7 @@ ul{
                  <img id="imgG" src="{{ url('centro') }}/imagenes/img2/Icon-Certificacion.png" alt="Avatar" style="height :100px">
                </div>
                <h2 align="center">CERTIFICACIÓN</h2>
-               <p align="center">Se otorgará con el número de créditos brindados por los colegios profesionales: </p>
+               <p align="center">Se otorgará el número de créditos brindados por los colegios profesionales: </p>
 
               <div class="row">
 
@@ -732,7 +731,7 @@ ul{
                     </a>
                   </div>
                    <div class="p-1 bd-highlight">
-                     <a href="">
+                     <a href="http://colegiodeobstetrasdelperu.org/">
                        <img src="{{ url('centro') }}/imagenes/logo/Afiche-CEPC-3.png" class="hvr-grow-shadow" alt="" width="70px" height="70px">
                     </a>
                   </div>
