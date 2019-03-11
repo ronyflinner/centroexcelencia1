@@ -69,7 +69,7 @@ class InscribirController extends Controller {
 				['nombre' => $name, 'dni' => $path_secundaria, 'email' => $email, 'tipo_persona' => 1, 'numero' => $cell, 'token' => $slug]);
 			Session::flash('mensaje_success', 'Sus datos fueron guardados correctamente');
 		} else {
-
+			Session::flash('mensaje_success', 'Sus datosr fueron guardados correctamente');
 		}
 		return response()->json(2);
 	}

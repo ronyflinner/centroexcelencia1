@@ -14,6 +14,7 @@
 
        <div class="container">
         @include('errors.request')
+         @include('errors.flash')
                  <form class="contact100-form validate-form" enctype="multipart/form-data" action="{{ route('inscripcion.store') }} " method="post"  id="avatarForm">
 
                       <form class="contact100-form validate-form"  enctype="multipart/form-data">
