@@ -2,11 +2,12 @@
 
 @section('content')
 
-<section class="banner" style="background-image: url({{ url('centro') }}/imagenes/3.png);">
-
-    </section>
-<br>
-
+    <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-6.png"  style="width:430px; height: 400px; "alt="First slide">
+      <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-6.png" alt="First slide" style="width:90000px; height: 400px; ">
+      <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-6.png" alt="First slide" style="width:800px; height: 400px; ">
+      <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-6.png" alt="First slide">
+      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-6.png" alt="First slide" style="width:1400px; height: 400px; ">
+     <br>
        <div class="section-title">
             <h4 style="color: #606060; " align="center">Inscripción</h4>
        </div>
@@ -40,7 +41,7 @@
                    <div class="col-md-6">
                        <div class="form-group">
                             <label for="name">
-                                DNI</label>
+                                Correo Electrónico</label>
                       <input type="email" class="form-control" name="email" data-parsley-required placeholder="Ingresa correo electrónico"  data-parsley-type="email"   />
                         </div>
                    </div>
@@ -59,7 +60,7 @@
                           <select class="form-control" id="exampleFormControlSelect1" data-parsley-required name="curso">
                             <option value="" selected="">Selecionar </option>
                             <option value="1">Curso de Prevención de Cancer en Primer Nivel de Atención de Salud </option>
-                            <option value="2">Curso de Asesoria Genética de Cancer Dirigido al Perimer Nivel de Atención de Salud</option>
+                            <!--<option value="2">Curso de Asesoria Genética de Cancer Dirigido al Perimer Nivel de Atención de Salud</option>-->
                           </select>
                     </div>
                   </div>
@@ -103,23 +104,13 @@
                   <label class="checkbox-inline"><input type="radio" name='contrato'data-parsley-required  checked="" value="1"> Acuerdo</label>
                   <label class="checkbox-inline"><input type="radio" name='contrato' value=""> Desacuerdo</label>
                 </div>
-
-
-
-
                 <div class="modal-footer">
                     <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
-
                     <button type="submit" class="btn btn-success" id="enviar">
                            Registrar </button>
-
                 </div>
                 </form>
-
-          </div>
-
-
-
+      </div>
 <style type="text/css">
   /*
 

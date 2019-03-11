@@ -56,21 +56,15 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 	Route::resource('users', 'Admin\UsersController');
 	Route::post('users_mass_destroy', ['uses' => 'Admin\UsersController@massDestroy', 'as' => 'users.mass_destroy']);
 
-
-	
-
-
 	Route::get('aceptarInscripcion', 'Admin\DocumentoSearchController@aceptarInscripcion')->name('aceptarInscripcion.index');
 	Route::get('denegarInscripcion', 'Admin\DocumentoSearchController@denegarInscripcion')->name('denegarInscripcion.index');
-    
+
+	Route::get('comentarioData', 'Admin\ComentariosController@comentarioData')->name('comentarioData.index');
+
 	Route::get('dataT', 'Admin\DocumentoSearchController@dataT')->name('dataT.index');
 	Route::get('buscarCurso', 'Admin\DocumentoSearchController@buscarCurso')->name('buscarCurso.index');
 
-
-
-
-
-
 	Route::resource('docsearch', 'Admin\DocumentoSearchController');
+	Route::resource('comentarios', 'Admin\ComentariosController');
 
 });
