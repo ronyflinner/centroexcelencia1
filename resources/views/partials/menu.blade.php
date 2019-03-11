@@ -42,7 +42,7 @@
             </li>-->
 
             <li class="nav-item {{active_class(if_uri_pattern(['contactos2'],'active','other'))}}">
-              <a class="nav-link" href="{{ route('contactos2.index') }}">Contácto</a>
+              <a class="nav-link" href="{{ route('contactos2.index') }}">Contacto</a>
             </li>
 
             <li class="nav-item">

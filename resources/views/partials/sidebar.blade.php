@@ -11,7 +11,12 @@
                 </a>
             </li>
 
-
+            <li class="{{ $request->segment(1) == 'comentario' ? 'active' : '' }}">
+                <a href="{{ route('admin.comentarios.index') }}">
+                    <i class="fa  fa-user-plus"></i>
+                    <span class="title">Comentarios</span>
+                </a>
+            </li>
 
             <li class="{{ $request->segment(1) == 'change_password' ? 'active' : '' }}">
                 <a href="{{ route('auth.change_password') }}">

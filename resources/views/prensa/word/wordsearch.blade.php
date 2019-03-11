@@ -84,19 +84,27 @@
                <h3 class="box-title" align="center">Consultar Documentos</h3>
                <br><br>
              <div class="row">
-               <div class="col-md-6">
+               <div class="col-md-4">
                  <div class="form-group">
                   <h4>Seleccionar curso : </h4>
                     <select class="form-control" id="sel1">
                     </select>
-              </div>
+                </div>
                </div>
-             <!--  <div class="col-md-6">
+               <div class="col-md-4">
                   <h4>Seleccionar : </h4>
-                  <label class="radio-inline"><input type="radio" name="optradio" checked>Incripciones Aceptadas</label>
-                  <label class="radio-inline"><input type="radio" name="optradio">Incripciones Rechazadas</label>
+                  <select class="form-control" id="sel2">
+                    <option value="0">Recibidos</option>
+                    <option value="1">Aceptados</option>
+                    <option value="-1">Rechazados</option>
+                  </select>
+               </div>
+               <div class="col-md-4">
 
-               </div>-->
+                     <button type="button" id="aceptar" class="btn btn-primary ">Buscar</button>
+
+
+               </div>
              </div>
 
         <div class="container-fluid" id="No">
@@ -118,7 +126,7 @@
 
 
     </div>
-                    </div>
+              </div>
   </div>
 
 
@@ -189,11 +197,12 @@
         });
 
 
-        $("#sel1").change(function(){
-          var value = $(this).val();
-
+        $("#aceptar").click(function(){
+          var value = $("#sel1").val();
+          var value2 = $("#sel2").val();
           var parametros = {
                "id" : value,
+               "id2" : value2
             };
           $('#Na').remove();
           $('#Na_wrapper').remove();
@@ -233,6 +242,7 @@
 
          var parametros = {
                "id" : $('#sel1').val(),
+               "id2" : $('#sel2').val(),
             };
 
              itable = $('#Na').DataTable({
@@ -308,7 +318,7 @@
                       }); */
 
                   location.reload();
-                 
+
 
               },
               error: function (data) {
@@ -336,9 +346,9 @@
               headers: {
                          'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                         } ,
-              success:  function (data) { 
+              success:  function (data) {
                   location.reload();
-                  
+
 
               },
               error: function (data) {
@@ -352,7 +362,7 @@
 
             obtener_data_editar("#Na tbody",itable,"button.editar");
 
-             
+
 
 
 

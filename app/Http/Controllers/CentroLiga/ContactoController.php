@@ -28,6 +28,7 @@ class ContactoController extends Controller {
 		$slug = str_random(180);
 		$insertid = \DB::table('comentarios')->insertGetId(
 			['nombre' => $request->nombre, 'email' => $request->email, 'mensaje' => $request->mensaje, 'token' => $slug]);
+		Session::flash('mensaje_success', 'Sus datos fueron guardados correctamente');
 		return 0;
 	}
 	/**
@@ -38,7 +39,7 @@ class ContactoController extends Controller {
 	 */
 	public function store(Request $request) {
 		//
-		
+
 		$slug = str_random(180);
 		$insertid = \DB::table('comentarios')->insertGetId(
 			['nombre' => $request->input('nombre'), 'email' => $request->input('email'), 'mensaje' => $request->input('message'), 'token' => $slug]);

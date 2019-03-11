@@ -218,21 +218,18 @@
 
 @section('content')
 
-
-
-  <section class="banner" style="background-image: url({{ url('centro') }}/imagenes/medicos.jpg);">
-         <div class="gradient"></div>
-
-          </div>
-    </section>
-<br>
+      <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-1.png"  style="width:430px; height: 400px; "alt="First slide">
+      <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-1.png" alt="First slide" style="width:500px; height: 400px; ">
+      <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-1.png" alt="First slide" style="width:800px; height: 400px; ">
+      <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-1.png" alt="First slide">
+      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-1.png" alt="First slide" style="width:1400px; height: 400px; ">
+  <br>
 <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="d-flex justify-content-center">
-        <img src="{{ url('centro') }}/imagenes/DOCTORA.png" alt="logo" width="300" height="300">
+  <div class="row d-flex align-items-center">
+    <div class="col-md-6 d-flex justify-content-center">
+      <div class="d-flex ">
+        <img src="{{ url('centro')}}/imagenes/DOCTORA.png" style="width:300px; height: 300px; "alt="First slide" alt="logo" width="450" height="400">
       </div>
-
     </div>
     <div class="col-md-6">
       <div class="container">
@@ -293,8 +290,6 @@
     <br><br>
 </div>
 
-
-
 <section class="our-webcoderskull padding-lg">
   <div class="container">
 
@@ -304,9 +299,37 @@
     <ul class="row">
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" class="img-responsive" alt=""></figure>
+             <span style="font-size: 18px;"><br>Dr. Raúl Velarde Galdos</span><br>
+            <small style="font-size:10px;">
+              Director Médico de la Liga Contra el Cáncer
+              <div class="mb-2"></div>Ginecólogo Oncólogo de mamas y tejidos blandos
+
+            </small>
+
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr. José Jerónimo Guibovich.png" class="img-responsive" alt=""></figure>
+            <span style="font-size: 18px;"><br> Dr. José Jerónimo Guibovich </span><br>
+            <small style="font-size:11px;">Director Médico del Centro de Excelencia <div class="mb-1"></div>
+   Ginecólogo Oncólogo en EE. UU y Perú
+</small>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Mendez,-Marco.png" class="img-responsive" alt=""></figure>
+            <span style="font-size: 18px;"><br> Dr. Velarde Méndez, Marco </span><br>
+            <small style="font-size:12px;">Cirujano Oncólogo de mamas y tejidos blandos</small>
+          </div>
+      </li>
+      <li class="col-12 col-md-6 col-lg-3">
+          <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr-AguilarRamosPedro.png" class="img-responsive" alt=""></figure>
 
-            <span style="font-size: 18px;"><br> Dr. Aguilar Ramos Pedro </span><br>
+            <span style="font-size: 18px;"><br> Dr. Marco Velarde Méndez </span><br>
             <small style="font-size:12px;">Ginecólogo Oncólogo</small>
 
 
@@ -315,7 +338,7 @@
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Grisson-Barron,-Gilmar.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 18px;"><br> Dr. Grisson Barron, Gilmar</span><br>
+            <span style="font-size: 18px;"><br> Dr. Gilmar Grisson Barron </span><br>
             <small style="font-size:12px;">Cirujano Oncólogo</small>
           </div>
       </li>
@@ -323,7 +346,7 @@
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Lama-Calle,-Carlos.png" class="img-responsive" alt=""></figure>
 
-            <span style="font-size: 18px;"><br> Dr. Lama Calle, Carlo </span><br>
+            <span style="font-size: 18px;"><br> Dr. Carlos Lama Calle </span><br>
             <small style="font-size:12px;">Ginecólogo Oncólogo</small>
 
           </div>
@@ -332,31 +355,8 @@
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-López-Blanco,-Aldo.png" class="img-responsive" alt=""></figure>
 
-            <span style="font-size: 18px;"><br> Dr. López Blanco, Aldo </span><br>
+            <span style="font-size: 18px;"><br> Dr. Aldo López Blanco </span><br>
             <small style="font-size:12px;">Ginecólogo Oncólogo</small>
-          </div>
-      </li>
-    </ul>
-
-
-    <ul class="row">
-      <li class="col-12 col-md-6 col-lg-3">
-          <div class="cnt-block equal-hight" style="height: 349px;">
-            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" class="img-responsive" alt=""></figure>
-             <span style="font-size: 18px;"><br>Dr. Velarde Galdos, Raúl </span><br>
-            <small style="font-size:12px;">
-              Director Médico de la Liga Contra el Cáncer
-Ginecólogo Oncólogo de mamas y tejidos blandos
-
-            </small>
-
-          </div>
-      </li>
-      <li class="col-12 col-md-6 col-lg-3">
-          <div class="cnt-block equal-hight" style="height: 349px;">
-            <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Mendez,-Marco.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 18px;"><br> Dr. Velarde Méndez, Marco </span><br>
-            <small style="font-size:12px;">Cirujano Oncólogo de mamas y tejidos blandos</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
@@ -369,45 +369,41 @@ Ginecólogo Oncólogo de mamas y tejidos blandos
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Malca-Tocas,-Mirtha.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 18px;"><br> Dra. Malca Tocas, Mirtha </span><br>
+            <span style="font-size: 18px;"><br> Dra. Mirtha Malca Tocas </span><br>
             <small style="font-size:12px;">Ginecóloga Oncóloga</small>
           </div>
       </li>
-    </ul>
-
-
-
-        <ul class="row">
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
-            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Gonzales-Cabrera-,-Magali-Jovana.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 18px;"><br> Lic. Gonzáles Cabrera , Magali Jovana  </span><br>
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Torres-Campos,-Clerk-Oriele.png" class="img-responsive" alt=""></figure>
+             <span style="font-size: 18px;"><br> Lic. Clerk Torres Campos  </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Lopez-Ampuero,-Catya-Luz.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 18px;"><br> Lic. López Ampuero, Catya Luz </span><br>
+            <span style="font-size: 18px;"><br> Lic. Catya López Ampuero </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Medrano-Guillen,-Claudia-Nathaly.png" class="img-responsive" alt=""></figure>
-            <span style="font-size: 18px;"><br> Lic. Medrano Guillen, Claudia Nathaly  </span><br>
+            <span style="font-size: 18px;"><br> Lic. Claudia Medrano Guillen  </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
-            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Torres-Campos,-Clerk-Oriele.png" class="img-responsive" alt=""></figure>
-             <span style="font-size: 18px;"><br> Lic. Torres Campos, Clerk Oriele  </span><br>
+            <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Gonzales-Cabrera-,-Magali-Jovana.png" class="img-responsive" alt=""></figure>
+            <span style="font-size: 18px;"><br> Lic. Magali Gonzáles Cabrera  </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
     </ul>
   </div>
 </section>
+
 @endsection
 

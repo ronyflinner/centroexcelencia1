@@ -2,12 +2,10 @@
 
 @section('content')
 <!-- Contact section Start -->
-<section class="banner" style="background-image: url({{ url('centro') }}/imagenes/3.png);">
-
-    </section>
+   <iframe src="{{url("mapsolo.html")}}" height="450" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 <br>
        <div class="section-title">
-            <h4 style="color: #606060; " align="center">Contácto</h4>
+            <h4 style="color: #606060; " align="center">Contacto</h4>
        </div>
 <div class="container">
 
@@ -29,7 +27,6 @@
         @include('errors.flash')
                  <form class="contact100-form validate-form" enctype="multipart/form-data" action="{{ route('contactos2.store') }} " method="post"  id="avatarForm">
 
-                      <form class="contact100-form validate-form"  enctype="multipart/form-data">
 
                       {!! Form::open(['route'=>'contactos2.store', 'method'=>'POST',"class"=>"form form-id",'files' => true, 'id'=>'form-id']) !!}
                       {!! Form::token() !!}

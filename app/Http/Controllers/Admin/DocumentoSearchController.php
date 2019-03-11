@@ -50,24 +50,25 @@ class DocumentoSearchController extends Controller {
 			->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
 			->join('cursos', 'cursos.id', '=', 'inscripcions.id_curso')
 			->where('inscripcions.id_curso', $request->id)
-			->select('personas.nombre', 'personas.tipo_persona', 'personas.email', 'inscripcions.id', 'personas.dni', 'inscripcions.voucher','inscripcions.estado' )->get();
+			->where('inscripcions.estado', $request->id2)
+			->select('personas.nombre', 'personas.tipo_persona', 'personas.email', 'inscripcions.id', 'personas.dni', 'inscripcions.voucher', 'inscripcions.estado')->get();
 		//$register = Persona::where('tipo_persona', 1)->get();
 		$con = 1;
 		return datatables($register)
-		->addColumn('id', function ($val) use (&$con) {
+			->addColumn('id', function ($val) use (&$con) {
 				return $val->id;
-		})->addColumn('dni', function ($val) {
+			})->addColumn('dni', function ($val) {
 			return $val->dni;
 		})->addColumn('nombre', function ($val) {
-				return $val->nombre;
+			return $val->nombre;
 		})->addColumn('correo', function ($val) {
 			return $val->email;
 		})->addColumn('estado', function ($val) {
-			if($val->estado==0){
+			if ($val->estado == 0) {
 				return 'Recibido';
-			}else if($val->estado==1){
+			} else if ($val->estado == 1) {
 				return 'Aceptado';
-			}else{
+			} else {
 				return 'Rechazado';
 			}
 			return $val->estado;
