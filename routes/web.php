@@ -63,6 +63,7 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 
 	Route::get('dataT', 'Admin\DocumentoSearchController@dataT')->name('dataT.index');
 	Route::get('buscarCurso', 'Admin\DocumentoSearchController@buscarCurso')->name('buscarCurso.index');
+	Route::get('descargarPDF', 'Admin\DocumentoSearchController@showpdf')->name('descargarPDF.index');
 
 	Route::resource('docsearch', 'Admin\DocumentoSearchController');
 	Route::resource('comentarios', 'Admin\ComentariosController');

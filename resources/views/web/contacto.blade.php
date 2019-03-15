@@ -4,8 +4,9 @@
 <!-- Contact section Start -->
    <iframe src="{{url("mapsolo.html")}}" height="450" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 <br>
-       <div class="section-title">
-            <h4 style="color: #606060; " align="center">Contacto</h4>
+       <div class="section-title" >
+            <h4 style="color: #606060; " data-aos="fade-down"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" align="center">Contacto</h4>
        </div>
 <div class="container">
 
@@ -23,8 +24,8 @@
     <div class="row">
         <div class="col-md-8">
             <div class="well well-sm">
-                 @include('errors.request')
-        @include('errors.flash')
+                  @include('errors.request')
+         @include('errors.flash')
                  <form class="contact100-form validate-form" enctype="multipart/form-data" action="{{ route('contactos2.store') }} " method="post"  id="avatarForm">
 
 
@@ -32,12 +33,14 @@
                       {!! Form::token() !!}
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                             <label for="name">
                                 Nombre</label>
                             <input type="text" class="form-control" name="nombre"  id="nombre" placeholder="Ingresa nombre" required="required" />
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                             <label for="email">
                                 Correo Electrónico</label>
                             <div class="input-group">
@@ -46,11 +49,14 @@
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Ingresa correo electrónico" required="required" /></div>
                         </div>
                         <div class="form-group">
-                           <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
+                           <div class="captcha_wrapper">
+                       <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
+                      </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group">
+                        <div class="form-group" data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                             <label for="name">
                                 Mensaje</label>
                             <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
@@ -71,7 +77,8 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="flip-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
             <form>
 
             <address>
@@ -80,12 +87,6 @@
                 <br>
 Central Telefónica: (01)204-0404 - Anexo 244
             </address>
-
-
-
-
-
-
 
             </form>
         </div>

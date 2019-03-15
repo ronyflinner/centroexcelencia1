@@ -6,9 +6,11 @@
       <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-6.png" alt="First slide" style="width:90000px; height: 400px; ">
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-6.png" alt="First slide" style="width:800px; height: 400px; ">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-6.png" alt="First slide">
-      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-6.png" alt="First slide" style="width:1400px; height: 400px; ">
-     <br>
-       <div class="section-title">
+      <img class="d-none d-xl-inline" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-6.png" alt="First slide" style="width:1400px; height: 400px; ">
+     <br><br>
+       <div class="section-title" data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900" >
             <h4 style="color: #606060; " align="center">Inscripción</h4>
        </div>
 
@@ -22,7 +24,8 @@
                       {!! Form::open(['route'=>'inscripcion.store', 'method'=>'POST',"class"=>"form form-id",'files' => true, 'id'=>'form-id']) !!}
                       {!! Form::token() !!}
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                     <div class="form-group">
                             <label for="name">
                                 Nombre</label>
@@ -30,7 +33,8 @@
                         </div>
                   </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6" data-aos="fade-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                        <div class="form-group">
                             <label for="name">
                                 DNI</label>
@@ -39,14 +43,16 @@
                    </div>
                 </div>
                 <div class="row">
-                   <div class="col-md-6">
+                   <div class="col-md-6" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                        <div class="form-group">
                             <label for="name">
                                 Correo Electrónico</label>
                       <input type="email" class="form-control" name="email" data-parsley-required placeholder="Ingresa correo electrónico"  data-parsley-type="email"   />
                         </div>
                    </div>
-                   <div class="col-md-6">
+                   <div class="col-md-6" data-aos="fade-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                        <div class="form-group">
                             <label for="name">
                                 Número telefónico</label>
@@ -55,7 +61,8 @@
                    </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
+                  <div class="col-md-6" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                     <div class="form-group">
                           <label for="exampleFormControlSelect1">Seleccionar Curso</label>
                           <select class="form-control" id="exampleFormControlSelect1" data-parsley-required name="curso">
@@ -65,7 +72,8 @@
                           </select>
                     </div>
                   </div>
-                   <div class="col-md-6">
+                   <div class="col-md-6" data-aos="fade-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
                       <div class="form-group">
                               <label for="exampleFormControlSelect1">Seleccionar tipo de participante</label>
                               <select class="form-control" data-parsley-required  id="exampleFormControlSelect1" name="tipo">
@@ -78,26 +86,28 @@
                           </div>
                    </div>
                 </div>
-                <div class="row">
 
-                   <div class="col-md-6 offset-6">
                         {{ csrf_field() }}
-
-                     <div class=" mr-sm-2 col-sm-5 wrap-input-container">
+                    <div class="d-flex justify-content-center" data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">
+                    	 <div class=" mr-sm-2 col-sm-5 wrap-input-container ">
                         <label class="custom-file-upload form-control">
                           <i class="fa fa-cloud-upload"></i> Añadir voucher de pago
                         </label>
                         <input class="file-upload" data-parsley-required name="archivo" type="file">
                       </div>
-                   </div>
-                </div>
+
+                    </div>
+
 
                 <br>
-                <div class="container">
+                <div class="container" data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">
                       <h3 class="text-center">Términos y Condiciones</h3>
                 </div><br>
 
-                <div class="container text-justify" style="overflow: scroll; height: 200px;">
+                <div data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900" class="container text-justify" style="overflow: scroll; height: 200px;">
 
 
                 <p class="primeralinea">Este sitio web es operado por Liga Contra el Cancer. En todo el sitio, los términos “nosotros”, “nos” y “nuestro” se refieren a Liga Contra el Cancer. Liga Contra el Cancer ofrece este sitio web, incluyendo toda la información, herramientas y servicios disponibles para ti en este sitio, el usuario, está condicionado a la aceptación de todos los términos, condiciones, políticas y notificaciones aquí establecidos.</p>
@@ -145,10 +155,29 @@
                   <label class="checkbox-inline"><input type="radio" name='contrato'data-parsley-required  checked="" value="1"> Acuerdo</label>
                   <label class="checkbox-inline"><input type="radio" name='contrato' value=""> Desacuerdo</label>
                 </div>
-                <div class="modal-footer">
-                    <div class="g-recaptcha" data-sitekey="{{env('CAPTCHA_KEY')}}"></div>
-                    <button type="submit" class="btn btn-success" id="enviar">
+                <div class="d-flex justify-content-center">
+
+                		<div class="captcha_wrapper">
+                       <div class="g-recaptcha" data-sitekey="6Le3QJYUAAAAAGNsPwIwJP_w3q3HIa65sAvAMZYZ"></div>
+                      </div>
+
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                <div class="col-md-6 d-flex justify-content-center">
+                		<br>
+                          <button type="submit" class="btn btn-success " id="enviar">
                            Registrar </button>
+                 </div>
+                 </div>
+                <div class="row">
+
+
+                </div>
+                <div class="modal-footer">
+
+
+
                 </div>
                 </form>
       </div>

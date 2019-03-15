@@ -138,161 +138,160 @@ return [
 	'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
 	/*
-    |--------------------------------------------------------------------------
-    | Captcha middleware
-    |--------------------------------------------------------------------------
-    |
-    */
-    'middleware' => ['web'],
+		    |--------------------------------------------------------------------------
+		    | Captcha middleware
+		    |--------------------------------------------------------------------------
+		    |
+	*/
+	'middleware' => ['web'],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Captcha routes
-    |--------------------------------------------------------------------------
-    |
-    */
-    'routes' => [
-        'image'     => 'captcha/image',
-        'image_tag' => 'captcha/image_tag'
-    ],
+	/*
+		    |--------------------------------------------------------------------------
+		    | Captcha routes
+		    |--------------------------------------------------------------------------
+		    |
+	*/
+	'routes' => [
+		'image' => 'captcha/image',
+		'image_tag' => 'captcha/image_tag',
+	],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Blade directive
-    |--------------------------------------------------------------------------
-    | You can use blade directive @captcha for rendering captcha.
-    |
-    */
-    'blade' => 'captcha',
+	/*
+		    |--------------------------------------------------------------------------
+		    | Blade directive
+		    |--------------------------------------------------------------------------
+		    | You can use blade directive @captcha for rendering captcha.
+		    |
+	*/
+	'blade' => 'captcha',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Validator name
-    |--------------------------------------------------------------------------
-    |
-    */
-    'validator' => 'captcha',
+	/*
+		    |--------------------------------------------------------------------------
+		    | Validator name
+		    |--------------------------------------------------------------------------
+		    |
+	*/
+	'validator' => 'captcha',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Captcha generator.
-    |--------------------------------------------------------------------------
-    | Must implement GeneratorInterface.
-    |
-    */
-    'generator' => \Igoshev\Captcha\Captcha\Generator\GeneratorWaves::class,
+	/*
+		    |--------------------------------------------------------------------------
+		    | Captcha generator.
+		    |--------------------------------------------------------------------------
+		    | Must implement GeneratorInterface.
+		    |
+	*/
+	'generator' => \Igoshev\Captcha\Captcha\Generator\GeneratorWaves::class,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Storage code.
-    |--------------------------------------------------------------------------
-    | Must implement StorageInterface.
-    |
-    */
-    'storage' => \Igoshev\Captcha\Captcha\Storage\SessionStorage::class,
+	/*
+		    |--------------------------------------------------------------------------
+		    | Storage code.
+		    |--------------------------------------------------------------------------
+		    | Must implement StorageInterface.
+		    |
+	*/
+	'storage' => \Igoshev\Captcha\Captcha\Storage\SessionStorage::class,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Code generator.
-    |--------------------------------------------------------------------------
-    | Must implement CodeInterface.
-    |
-    */
-    'code' => \Igoshev\Captcha\Captcha\Code\SimpleCode::class,
+	/*
+		    |--------------------------------------------------------------------------
+		    | Code generator.
+		    |--------------------------------------------------------------------------
+		    | Must implement CodeInterface.
+		    |
+	*/
+	'code' => \Igoshev\Captcha\Captcha\Code\SimpleCode::class,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Font
-    |--------------------------------------------------------------------------
-    | Supported: "IndiraK".
-    |
-    */
-    'font' => base_path('vendor/bonecms/laravel-captcha/src/resources/fonts/IndiraK.ttf'),
+	/*
+		    |--------------------------------------------------------------------------
+		    | Font
+		    |--------------------------------------------------------------------------
+		    | Supported: "IndiraK".
+		    |
+	*/
+	'font' => base_path('vendor/bonecms/laravel-captcha/src/resources/fonts/IndiraK.ttf'),
 
-    /*
-    |--------------------------------------------------------------------------
-    | Font size
-    |--------------------------------------------------------------------------
-    | Font size in pixels.
-    |
-    */
-    'fontSize' => 26,
+	/*
+		    |--------------------------------------------------------------------------
+		    | Font size
+		    |--------------------------------------------------------------------------
+		    | Font size in pixels.
+		    |
+	*/
+	'fontSize' => 26,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Letter spacing
-    |--------------------------------------------------------------------------
-    | Spacing between letters in pixels.
-    |
-    */
-    'letterSpacing' => 2,
+	/*
+		    |--------------------------------------------------------------------------
+		    | Letter spacing
+		    |--------------------------------------------------------------------------
+		    | Spacing between letters in pixels.
+		    |
+	*/
+	'letterSpacing' => 2,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Code Length
-    |--------------------------------------------------------------------------
-    | You can specify an array or integer.
-    |
-    */
-    'length' => [4, 5],
+	/*
+		    |--------------------------------------------------------------------------
+		    | Code Length
+		    |--------------------------------------------------------------------------
+		    | You can specify an array or integer.
+		    |
+	*/
+	'length' => [4, 5],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Displayed chars
-    |--------------------------------------------------------------------------
-    | Enter the different characters.
-    |
-    */
-    'chars' => 'QSFHTRPAJKLMZXCVBNabdefhxktyzj23456789',
+	/*
+		    |--------------------------------------------------------------------------
+		    | Displayed chars
+		    |--------------------------------------------------------------------------
+		    | Enter the different characters.
+		    |
+	*/
+	'chars' => 'QSFHTRPAJKLMZXCVBNabdefhxktyzj23456789',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Image Size
-    |--------------------------------------------------------------------------
-    | Captcha image size can be controlled by setting the width
-    | and height properties.
-    |
-    |
-    */
-    'width'  => 180,
-    'height' => 50,
+	/*
+		    |--------------------------------------------------------------------------
+		    | Image Size
+		    |--------------------------------------------------------------------------
+		    | Captcha image size can be controlled by setting the width
+		    | and height properties.
+		    |
+		    |
+	*/
+	'width' => 180,
+	'height' => 50,
 
-    /*
-    |--------------------------------------------------------------------------
-    | Background Captcha
-    |--------------------------------------------------------------------------
-    | You can specify an array or string.
-    |
-    */
-    'background' => 'f2f2f2',
+	/*
+		    |--------------------------------------------------------------------------
+		    | Background Captcha
+		    |--------------------------------------------------------------------------
+		    | You can specify an array or string.
+		    |
+	*/
+	'background' => 'f2f2f2',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Colors characters
-    |--------------------------------------------------------------------------
-    | You can specify an array or string.
-    |
-    */
-    'colors' => '2980b9',
+	/*
+		    |--------------------------------------------------------------------------
+		    | Colors characters
+		    |--------------------------------------------------------------------------
+		    | You can specify an array or string.
+		    |
+	*/
+	'colors' => '2980b9',
 
-    /*
-    |--------------------------------------------------------------------------
-    | Scratches
-    |--------------------------------------------------------------------------
-    | The number of scratches displayed in the Captcha.
-    |
-    */
-    'scratches' => [1, 6],
+	/*
+		    |--------------------------------------------------------------------------
+		    | Scratches
+		    |--------------------------------------------------------------------------
+		    | The number of scratches displayed in the Captcha.
+		    |
+	*/
+	'scratches' => [1, 6],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Id of the Captcha code input textbox
-    |--------------------------------------------------------------------------
-    | After updating the Captcha focus will be set on an element with this id.
-    |
-    */
-    'inputId' => 'captcha',
-    
+	/*
+		    |--------------------------------------------------------------------------
+		    | Id of the Captcha code input textbox
+		    |--------------------------------------------------------------------------
+		    | After updating the Captcha focus will be set on an element with this id.
+		    |
+	*/
+	'inputId' => 'captcha',
 
 	/*
 		    |--------------------------------------------------------------------------
@@ -304,7 +303,6 @@ return [
 		    | this array to grant expanded functionality to your applications.
 		    |
 	*/
-
 
 	'providers' => [
 
@@ -354,8 +352,8 @@ return [
 		HieuLe\Active\ActiveServiceProvider::class,
 		Yajra\Datatables\DatatablesServiceProvider::class,
 		Mews\Captcha\CaptchaServiceProvider::class,
-        Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
-
+		Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
+		Barryvdh\DomPDF\ServiceProvider::class,
 
 		//Igoshev\Captcha\Providers\CaptchaServiceProvider::class,
 
@@ -417,6 +415,7 @@ return [
 		'Active' => HieuLe\Active\Facades\Active::class,
 		'Datatables' => Yajra\Datatables\Facades\Datatables::class,
 		'Captcha' => Mews\Captcha\Facades\Captcha::class,
+		'PDF' => Barryvdh\DomPDF\Facade::class,
 
 	],
 

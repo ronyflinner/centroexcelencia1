@@ -160,7 +160,7 @@
     </style>
 
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-aos="fade-right" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
   <!--  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
@@ -183,7 +183,7 @@
               <span>Inscríbete Aquí</span>
             </button></a></div>
 
-            <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscríbete Aquí</button> </a></div>
+            <div class="d-none d-xl-inline" data-aos="fade-right" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscríbete Aquí</button> </a></div>
        </div>
 
       <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slides-sm-final.png" style="width: 400px; " alt="First slide">
@@ -221,7 +221,8 @@
 
        <div class="col-sm-6 offset-md-6 ">
         <br>
-        <div class="container d-flex justify-content-center">
+        <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="container d-flex justify-content-center">
 
           <img src="{{ url('centro')}}/imagenes/img2/Fecha_Curso.png" >
         </div>
@@ -247,7 +248,8 @@
     <div class="carousel-item active" >
         <div class="carousel-caption">
               <br>
-              <div class="row d-flex justify-content-center">
+              <div data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="row d-flex justify-content-center">
                 <div class="col-xs-12 ">
                      <img src="{{ url('centro') }}/imagenes/directivos/Dr. José Jerónimo Guibovich.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
                      <h3 style="color:white">Dr. José Jerónimo Guibovich </h3><br>

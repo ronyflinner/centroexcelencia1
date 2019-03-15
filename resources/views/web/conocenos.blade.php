@@ -222,17 +222,20 @@
       <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-1.png" alt="First slide" style="width:500px; height: 400px; ">
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-1.png" alt="First slide" style="width:800px; height: 400px; ">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-1.png" alt="First slide">
-      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-1.png" alt="First slide" style="width:1400px; height: 400px; ">
+      <img data-aos="fade-down"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-1.png" alt="First slide" style="width:1400px; height: 400px; ">
   <br>
 <div class="container-fluid">
   <div class="row d-flex align-items-center">
     <div class="col-md-6 d-flex justify-content-center">
-      <div class="d-flex ">
+      <div class="d-flex" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
         <img src="{{ url('centro')}}/imagenes/DOCTORA.png" style="width:300px; height: 300px; "alt="First slide" alt="logo" width="450" height="400">
       </div>
     </div>
     <div class="col-md-6">
-      <div class="container">
+      <div class="container" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
 
       <br>
       <p  class="text-justify primeralinea">
@@ -259,7 +262,8 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-4 col-sm-12  " style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+            <div class="col-md-4 col-sm-12" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="300" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; filter: grayscale(50%) brightness(200%);
               -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 40px;" >
@@ -270,7 +274,8 @@
                <p  align="center" style="color:white">Promover la capacitación de los profesionales de salud de todos los niveles de atención en prevención primaria y secundaria de los diversos tipos de cáncer.</p>
             </div>
 
-            <div class="col-md-4 col-sm-12 offset-md-4" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+            <div class="col-md-4 col-sm-12 offset-md-4" data-aos="fade-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="300"  style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; filter: grayscale(50%) brightness(200%);
               -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 40px;" >
@@ -293,7 +298,8 @@
 <section class="our-webcoderskull padding-lg">
   <div class="container">
 
-      <div class="section-title">
+      <div class="section-title" data-aos="fade-down-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
                   <h4 style="color: #606060; "> DOCENTES MÉDICOS</h4>
       </div>
     <ul class="row">

@@ -1,77 +1,59 @@
 @extends('layouts.app')
 @section('meta')
-   <title>Juntos por el Medio Ambiente</title>
-    <meta name="description" content="Juntos por el Medio Ambiente es una iniciativa que nace con el objetivo de sensibilizar a la sociedad sobre el grave problema de contaminación que afecta al Perú y promover buenas prácticas para mitigar su impacto." />
+   <title>Centro de Excelencia en Prevención de Cáncer</title>
+    <meta name="description" content="" />
 @endsection
 @section('content')
+   <div class="box box-primary">
+        <div class="box-header with-border" >
+            <div class="container">
+               <h3 class="box-title" align="center">Administración de Inscripciones</h3>
+               <br><br>
+                Este sistema permitira dar seguimiento a las inscripciones de los cursos disponibles y comentarios que lleguen de la página principal.
+                 <section class="content">
 
-      <!--
-  <section class="content">
+                    <div class="row">
+                      <div class="col-lg-3 col-xs-6 offset-6">
 
-      <div class="row">
-        <div class="col-lg-3 col-xs-6">
+                        <div class="small-box bg-aqua">
+                          <div class="inner">
+                            <h3>{{ $ins }}</h3>
 
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3>150</h3>
+                            <p style="color: white;">Numero de Inscripciones</p>
+                          </div>
+                          <div class="icon">
+                            <i class="ion ion-person-add"></i>
 
-              <p>New Orders</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                          </div>
+                          <a href="{{ route('admin.docsearch.index') }}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+
+
+                      <div class="col-lg-3 col-xs-6">
+
+                        <div class="small-box bg-yellow">
+                          <div class="inner">
+                            <h3>{{ $com }}</h3>
+
+                            <p style="color: white;">Numero de Comentarios</p>
+                          </div>
+                          <div class="icon">
+                            <i class="ion ion-bag"></i>
+                          </div>
+                          <a href="{{ route('admin.comentarios.index') }}" class="small-box-footer">Más información <i class="fa fa-arrow-circle-right"></i></a>
+                        </div>
+                      </div>
+
+
+                    </div>
+
+                </section>
+             </div>
           </div>
-        </div>
+   </div>
 
-        <div class="col-lg-3 col-xs-6">
 
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-              <p>Bounce Rate</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-xs-6">
-
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3>44</h3>
-
-              <p>User Registrations</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-xs-6">
-
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3>65</h3>
-
-              <p>Unique Visitors</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-
-      </div>
-
-  </section>
 
 <!--
 

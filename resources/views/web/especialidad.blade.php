@@ -7,7 +7,8 @@
       <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-5.png" alt="First slide" style="width:90000px; height: 400px; ">
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-5.png" alt="First slide" style="width:800px; height: 400px; ">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-5.png" alt="First slide">
-      <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-5.png" alt="First slide" style="width:1400px; height: 400px; ">
+      <img class="d-none d-xl-inline" data-aos="fade-down"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-5.png" alt="First slide" style="width:1400px; height: 400px; ">
 <br>
 
 <!-- <div class="container-fluid">
@@ -270,7 +271,8 @@ elemento{
 
 </style>
 
-<div>
+<div data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
             <h2 style="color: #606060; " align="center">Cursos y Capacitaciones</h2>
               <hr>
              <p align="center" style="text-transform:none; color: black">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer. </p>
@@ -331,13 +333,14 @@ elemento{
                   background-repeat: no-repeat;
                   background-position: center; height: 400px">  </div>-->
 
-     <div class="col-md-6 " style="background:#ea2929; height: 400px">
+     <div class="col-md-6 " style="background:#ea2929; height: 400px" >
          <br>
         <div class="d-flex justify-content-center" style="border-right: 2px solid white; border-left: 2px solid white; height: 350px; ">
           <div class="container d-flex align-items-center">
             <div class="container">
 
-            <div class="cnt-block equal-hight">
+            <div class="cnt-block equal-hight" data-aos="fade-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
           <!-- <h5 style="color:white" align="center">Curso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>-->
              <div class="mb-2"></div>
             <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
@@ -380,7 +383,8 @@ elemento{
             <h4 style="font-size:30px; color: #606060;">INSCRIPCIÓN</h4>
   </div>
   <div class="row">
-      <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+      <div data-aos="flip-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
             <a href="{{route('inscripcion.index')}}">
               <div class="contenedor">
                   <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -394,7 +398,8 @@ elemento{
                 </div>
             </a>
       </div>
-      <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+      <div data-aos="flip-right"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
           <a href="{{route('inscripcion.index')}}">
           <div class="contenedor">
             <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -408,7 +413,8 @@ elemento{
         </div>
           </a>
     </div>
-    <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+    <div data-aos="flip-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
           <a href="{{route('inscripcion.index')}}">
           <div class="contenedor">
             <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -422,7 +428,8 @@ elemento{
         </div>
           </a>
     </div>
-    <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+    <div data-aos="flip-left"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
           <a href="{{route('inscripcion.index')}}">
           <div class="contenedor">
             <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -754,7 +761,8 @@ ul{
             <div class="col-md-2 col-sm-12" >
 
             </div>
-            <div class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+            <div class="col-md-4 col-sm-12" data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;  height: 350px; padding: 35px;" >
                  <div class="d-flex justify-content-center">
@@ -799,7 +807,8 @@ ul{
 
 
 
-            <div class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+            <div data-aos="zoom-in"
+     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;  height: 350px; padding: 35px;" >
                  <div class="d-flex justify-content-center">

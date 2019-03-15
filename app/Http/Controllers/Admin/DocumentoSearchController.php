@@ -3,11 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Mail\DemoEmail;
 use App\Model\Curso;
 use App\Model\Inscripcion;
 use App\Model\Persona;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use PDF;
 
 class DocumentoSearchController extends Controller {
 	/**
@@ -17,6 +20,7 @@ class DocumentoSearchController extends Controller {
 	 */
 	public function index() {
 		//
+		//return view('mail.mensaje');
 		return view('prensa.word.wordsearch');
 	}
 
@@ -28,11 +32,20 @@ class DocumentoSearchController extends Controller {
 	public function aceptarInscripcion(Request $request) {
 		$flight = Inscripcion::find($request->id);
 
+		$idpersona = $flight->id_persona;
 		$flight->estado = 1;
 
 		$flight->save();
 
-		return response()->json($request->id);
+		$persona = Persona::find($idpersona);
+
+		if (Mail::to($persona->email)->queue(new DemoEmail($request->id))) {
+			return response()->json('Mensaje enviado');
+		} else {
+			return response()->json('Mensaje no enviado');
+		};
+		return response()->json('Mensaje no enviado');
+
 	}
 
 	public function denegarInscripcion(Request $request) {
@@ -73,7 +86,7 @@ class DocumentoSearchController extends Controller {
 			}
 			return $val->estado;
 		})->addColumn('voucher', function ($val) {
-			return "<button class='editar btn btn-primary'  value='" . $val->voucher . "' href='#primary' data-toggle='modal'><h4><i class='glyphicon glyphicon-eye-open'></i><input style='display:none' value='" . $val->voucher . "'></input></h4></button>";
+			return "<button class='editar btn btn-primary'  value='" . $val->voucher . "' href='#primary' type='button' data-toggle='modal'><h4><i class='glyphicon glyphicon-eye-open'></i><input style='display:none' value='" . $val->voucher . "'></input></h4></button>";
 		})->rawColumns(['voucher'])->make(true);
 	}
 
@@ -117,6 +130,52 @@ class DocumentoSearchController extends Controller {
 		return response()->json($data);
 	}
 
+	public function showpdf(Request $request) {
+		//	return view('reports.reciboPdf');
+		//$cita = Cita::where('slug', $slug)->get();
+		$pdf = 0;
+		$curso = Curso::where('id', $request->sel1)->get();
+		$namecurso = $curso[0]->nombre;
+		if ($request->spdf == 0) {
+
+			$register = DB::table('inscripcions')
+				->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
+				->where('inscripcions.estado', 0)
+				->select('personas.nombre', 'personas.email', 'personas.numero')->get();
+
+			//$register = Inscripcion::where('estado', 0)->get();
+			$pdf = PDF::loadView('report.historialrecibidos', ['register' => $register, 'respuesta' => 'Recibidas', 'curso' => $namecurso]);
+		} else if ($request->spdf == 1) {
+			$register = DB::table('inscripcions')
+				->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
+				->where('inscripcions.estado', 1)
+				->select('personas.nombre', 'personas.email', 'personas.numero')->get();
+			$pdf = PDF::loadView('report.historialrecibidos', ['register' => $register, 'respuesta' => 'Aceptadas', 'curso' => $namecurso]);
+		} else if ($request->spdf == -1) {
+			$register = DB::table('inscripcions')
+				->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
+				->where('inscripcions.estado', -1)
+				->select('personas.nombre', 'personas.email', 'personas.numero')->get();
+			$pdf = PDF::loadView('report.historialrecibidos', ['register' => $register, 'respuesta' => 'Rechazadas', 'curso' => $namecurso]);
+		}
+
+		$pdf->setPaper('a4', 'portrait')
+			->setWarnings(false)
+			->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);
+		//$pdf->setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);
+
+		//$date_structs = Date::now()->format('Ymdhis');
+		$recibo = "Recibo";
+
+		return $pdf->stream($recibo);
+		if ($condition == 1) {
+
+			return $pdf->stream($recibo);
+		} else {
+			return $pdf->download($recibo);
+		}
+
+	}
 	/**
 	 * Display the specified resource.
 	 *

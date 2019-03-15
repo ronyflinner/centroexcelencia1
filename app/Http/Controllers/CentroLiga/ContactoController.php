@@ -4,6 +4,7 @@ namespace App\Http\Controllers\CentroLiga;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class ContactoController extends Controller {
 	/**
@@ -39,11 +40,33 @@ class ContactoController extends Controller {
 	 */
 	public function store(Request $request) {
 		//
+		$response = $_POST["g-recaptcha-response"];
+		$url = 'https://www.google.com/recaptcha/api/siteverify';
+		$data = array(
+			'secret' => '6Le3QJYUAAAAAAceGQKhPhN_F897nLnV9xdcq-cE',
+			'response' => $_POST["g-recaptcha-response"],
+		);
+		$options = array(
+			'http' => array(
+				'method' => 'POST',
+				'content' => http_build_query($data),
+				'header' => 'Content-Type: application/x-www-form-urlencoded',
+			),
+		);
+		$context = stream_context_create($options);
+		$verify = file_get_contents($url, false, $context);
+		$captcha_success = json_decode($verify);
+		if ($captcha_success->success == false) {
+			Session::flash('mensaje_info', 'Su incripción no se ha realizado ,recuerde que debe rellenar todos los campos');
+			return view('web.contacto');
+		} else if ($captcha_success->success == true) {
+			$slug = str_random(180);
+			$insertid = \DB::table('comentarios')->insertGetId(
+				['nombre' => $request->input('nombre'), 'email' => $request->input('email'), 'mensaje' => $request->input('message'), 'token' => $slug]);
+			Session::flash('mensaje_success', 'Su incripción no se ha realizado ,recuerde que debe rellenar todos los campos');
+			return view('web.contacto');
+		}
 
-		$slug = str_random(180);
-		$insertid = \DB::table('comentarios')->insertGetId(
-			['nombre' => $request->input('nombre'), 'email' => $request->input('email'), 'mensaje' => $request->input('message'), 'token' => $slug]);
-		return view('web.contacto');
 	}
 
 	/**

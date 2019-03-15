@@ -19,8 +19,10 @@
     <title>Escuela de Excelencia en Prevención de Cáncer</title>
     <meta name="description" content="" />
 
+    <link rel="shortcut icon" type="images/x-icon" href="https://www.ligacancer.org.pe/favicon.ico" />
 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     @include('partials.head_template')
 
     </head>
@@ -87,8 +89,13 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-</script>
 
+
+
+</script>
+<script>
+  AOS.init();
+</script>
 
 @yield('javascript')
     </body>

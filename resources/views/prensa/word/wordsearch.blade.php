@@ -80,6 +80,7 @@
 
   <div class="box box-primary">
         <div class="box-header with-border" >
+           <form action="{{ route('admin.descargarPDF.index') }}" method="get" id="form1">
             <div class="container">
                <h3 class="box-title" align="center">Consultar Documentos</h3>
                <br><br>
@@ -87,36 +88,54 @@
                <div class="col-md-4">
                  <div class="form-group">
                   <h4>Seleccionar curso : </h4>
-                    <select class="form-control" id="sel1">
+                    <select class="form-control" id="sel1" name="sel1">
                     </select>
                 </div>
                </div>
                <div class="col-md-4">
                   <h4>Seleccionar : </h4>
-                  <select class="form-control" id="sel2">
+                  <select class="form-control" id="sel2" name='spdf'>
                     <option value="0">Recibidos</option>
                     <option value="1">Aceptados</option>
                     <option value="-1">Rechazados</option>
                   </select>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-2">
 
-                     <button type="button" id="aceptar" class="btn btn-primary ">Buscar</button>
+                     <button type="button" id="aceptar2" class="btn btn-primary ">Buscar</button>
 
 
                </div>
+               <div class="col-md-2 d-flex justify-content-center">
+
+                <div class="form-group ">
+                   <label></label>
+
+                    <div class="input-group">
+                      <button type="form_submit()" form="form1" value="Submit" id='bpdf' class="btn btn-success">Descargar PDF</button>
+
+                    </div>
+
+
+                <!-- /.input group -->
+               </div>
+
+
+               </div>
+
              </div>
 
         <div class="container-fluid" id="No">
-            <table class="table table-bordered" id="Na">
+            <table class="table table-striped table-hover dt-responsive display nowrap" cellspacing="0" style="width:100%" id="Na">
                <thead>
                   <tr>
                      <th>N°</th>
+                     <th>Voucher</th>
                      <th>DNI</th>
                      <th>Nombre</th>
                      <th>Correo</th>
                      <th>Estado</th>
-                     <th>Voucher</th>
+
 
                   </tr>
                </thead>
@@ -157,13 +176,27 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 </div>
-
+ </form>
 
 
 @endsection
 
 @section('javascript')
+
+  <script type="text/javascript" language="javascript" src="//cdn.datatables.net/1.10.3/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="//cdn.datatables.net/responsive/1.0.2/js/dataTables.responsive.js"></script>
+<script type="text/javascript" language="javascript" src="//cdn.datatables.net/plug-ins/a5734b29083/integration/bootstrap/3/dataTables.bootstrap.js"></script>
+
   <script>
+
+       function form_submit() {
+        document.getElementById("form1").submit();
+       }
+
+
+
+
+
 
        vurl='{{ url('admin/buscarCurso') }}';
 
@@ -196,8 +229,39 @@
           async: false
         });
 
+      /*  $('#bpdf').click(function(){
+            vurl='{ { url('admin/aceptarInscripcion') }}';
 
-        $("#aceptar").click(function(){
+             var parametros = {
+                     "id" : $('#sel2').val(),
+                  };
+              //$(location).attr('href',vurl);
+             // var doc = 'statusEdit';
+              $.ajax({
+              url:   vurl,
+              data: parametros,
+              type:  'GET', //método de envio
+              dataType : 'json',
+              headers: {
+                         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        } ,
+              success:  function (data) {
+               /*   $.each( data, function( key, value ) {
+
+                        $('#sel1').append("<option value='"+value['id']+"'>"+value['nombre']+"</option>")
+
+                      });
+              },
+              error: function (data) {
+
+                 console.log('Error:', data);
+                },
+                async: false
+              });
+        }) */
+
+
+        $("#aceptar2").click(function(){
           var value = $("#sel1").val();
           var value2 = $("#sel2").val();
           var parametros = {
@@ -206,9 +270,10 @@
             };
           $('#Na').remove();
           $('#Na_wrapper').remove();
-          $('#No').append('<table class="table table-bordered" id="Na"><thead><tr><th>N°</th><th>DNI</th><th>Nombre</th><th>Correo</th><th>Estado</th><th>Voucher</th></tr></thead></table>');
+          $('#No').append('<table class="table table-striped table-hover dt-responsive display nowrap" cellspacing="0" id="Na"><thead><tr><th>N°</th><th>Voucher</th><th>DNI</th><th>Nombre</th><th>Correo</th><th>Estado</th></tr></thead></table>');
 
           itable = $('#Na').DataTable({
+                        responsive:true,
                         processing: true,
                         serverSide: true,
                         ajax:{
@@ -221,11 +286,12 @@
                          },
                         columns: [
                             {data: 'id', name:'id','orderable': false},
+                            {data: 'voucher', name:'voucher'},
                             {data: 'dni', name:'dni'},
                             {data: 'nombre', name:'nombre'},
                             {data: 'correo', name:'correo'},
                             {data: 'estado', name:'estado'},
-                            {data: 'voucher', name:'voucher'},
+
                         ],
                         bAutoWidth: false,
                         order: [[0, 'asc']],
@@ -233,52 +299,14 @@
                         paging: true,
                         searching: false,
                         columnDefs: [
-                    { width: 20, height: 100,  targets: 0 }
-                ],
-                fixedColumns: true,
-                    });
-             });
-
-
-         var parametros = {
-               "id" : $('#sel1').val(),
-               "id2" : $('#sel2').val(),
-            };
-
-             itable = $('#Na').DataTable({
-                        processing: true,
-                        serverSide: true,
-                        ajax:{
-                            url:'{{ url('admin/dataT') }}' ,
-                            type:'get',
-                            data: parametros,
-                        } ,
-                         language: {
-                            url: '//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json'
-                         },
-                        columns: [
-                              {data: 'id', name:'id','orderable': false},
-                            {data: 'dni', name:'dni'},
-                            {data: 'nombre', name:'nombre'},
-                            {data: 'correo', name:'correo'},
-                            {data: 'estado', name:'estado'},
-                            {data: 'voucher', name:'voucher'},
-                        ],
-                        bAutoWidth: false,
-                        order: [[0, 'asc']],
-                        'aaSorting': [],
-                        paging: true,
-                        searching: false,
-                        columnDefs: [
-                    { width: 20, height: 100,  targets: 0 }
+                    { width: 30, height: 100,  targets: 0 }
                 ],
                 fixedColumns: true,
                     });
 
-
-
-         var obtener_data_editar = function(tbody,table,bt){
+          var obtener_data_editar = function(tbody,table,bt){
               $(tbody).on("click",bt,function(){
+
                 var data = table.row($(this).parents("tr")).data();
 
 
@@ -286,15 +314,14 @@
                  $('.modal-body').append("<div id='imagen'></div>")
                  $('#imagen').append("<img src='{{ url('/') }}/"+$(this).val()+"' style='width:90%'>");
                  $('#imagen').attr('href',data.id);
-
+                // alert(data.id);
 
                 // alert($('#imagen').attr('href'));
               })
             }
-
-        // aceptar
+              // aceptar
            $('#aceptar').click(function(){
-            // alert($('#imagen').attr('href'));
+           // alert($('#imagen').attr('href'));
               vurl='{{ url('admin/aceptarInscripcion') }}';
 
              var parametros = {
@@ -316,7 +343,7 @@
                         $('#sel1').append("<option value='"+value['id']+"'>"+value['nombre']+"</option>")
 
                       }); */
-
+                // console.log(data);
                   location.reload();
 
 
@@ -358,10 +385,8 @@
                 async: false
               });
            });
-
-
             obtener_data_editar("#Na tbody",itable,"button.editar");
-
+             });
 
 
 

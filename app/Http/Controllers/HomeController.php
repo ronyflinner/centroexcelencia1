@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Comentario;
+use App\Model\Inscripcion;
+
 class HomeController extends Controller {
 	/**
 	 * Create a new controller instance.
@@ -18,6 +21,10 @@ class HomeController extends Controller {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function index() {
-		return view('home');
+		$ins = Inscripcion::all();
+		$ins = count($ins);
+		$com = Comentario::all();
+		$com = count($com);
+		return view('home', ['ins' => $ins, 'com' => $com]);
 	}
 }

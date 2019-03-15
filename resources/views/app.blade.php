@@ -52,9 +52,9 @@
 
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Desarraolador</b>- Luis Gómez
+      <b>Desarrollador</b>- Ronald Lindo Jaimes
     </div>
-    <strong>&copy; 2018  -Todos los Derechos reservados  <a href="#">Orange-360</a>.</strong>
+    <strong>&copy; 2019  -Todos los Derechos reservados  <a href="#">Orange-360</a>.</strong>
 
   </footer>
 

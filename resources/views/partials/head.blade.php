@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <title>
-    {{ trans('global.global_title') }}
+    Centro de Excelencia en Prevención de Cáncer
 </title>
 
 <meta http-equiv="X-UA-Compatible"
@@ -54,3 +54,9 @@
 <link rel="stylesheet" type="text/css" href="{{ url('carnaval/css/jquery.dataTables.min.css') }}">
 
 <link rel="stylesheet" type="text/css" href="{{ url('carnaval/css/jquery.verySimpleImageViewer.css') }}">
+
+<link rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"/>
+
+<link rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css"/>

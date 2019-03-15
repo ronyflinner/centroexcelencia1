@@ -7,11 +7,11 @@
 
 
 
-        <div class="d-inline d-sm-none"> <a class="navbar-brand" href="{{ url('/') }}"><img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" style="width: 200px;"> </div>
+        <div  class="d-inline d-sm-none"> <a class="navbar-brand" href="{{ url('/') }}"><img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" style="width: 200px;"> </div>
         <div class="d-none d-sm-block d-md-none d-lg-none d-xl-none"> <img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" > </div>
         <div class="d-none d-md-block d-lg-none d-xl-none"> <img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" > </div>
         <div class="d-none d-lg-block d-xl-none"> <img  src="{{url('centro')}}/imagenes/logo-201x44.png" alt="logo" > </div>
-        <div class="d-none d-xl-block">  <a class="navbar-brand" href="{{ url('/') }}"><img  src="{{url('centro')}}/imagenes/Logotipo1.png" alt="logo" width="300" height="80">  </div>
+        <div data-aos="zoom-in" data-aos-duration="1500" class="d-none d-xl-block">  <a class="navbar-brand" href="{{ url('/') }}"><img  src="{{url('centro')}}/imagenes/Logotipo1.png" alt="logo" width="300" height="80">  </div>
 
        <img id="img2" >
 
