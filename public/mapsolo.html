@@ -63,7 +63,10 @@
                   { 
                     position: new google.maps.LatLng(coord[i]), 
                     map: map,
-                    icon:'centro/imagenes/hola.png',
+                    icon:{
+                      url: 'centro/imagenes/40x40.png',
+                      scaledSize: new google.maps.Size(30, 30)
+                    },
                     
                     animation : google.maps.Animation.DROP, 
                     

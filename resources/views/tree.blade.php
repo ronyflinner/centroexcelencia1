@@ -166,10 +166,10 @@
   <!--  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li> -->
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class=" active">
 
       <div style="position: relative;" style="background-image: url({{ url('centro')}}/imagenes/Slides-3.png);">
-            <div class="d-inline d-sm-none" style="position: absolute; left: 33%; top: 355px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red;">Inscríbete Aquí</button> </a></div>
+            <div class="d-inline d-sm-none" style="position: absolute; left: 35%; top: 330px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red;">Inscríbete Aquí</button> </a></div>
 
             <div class="d-none d-sm-inline d-md-none" style="position: absolute; left: 70%; top: 400px;"><a href="{{ route('inscripcion.index') }}" > <button class="button">
               <span>Inscríbete Aquí</span>
@@ -183,15 +183,20 @@
               <span>Inscríbete Aquí</span>
             </button></a></div>
 
-            <div class="d-none d-xl-inline" data-aos="fade-right" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscríbete Aquí</button> </a></div>
+            <div class="d-none d-xl-inline" style="position: absolute; left: 70%; top: 450px;"><a href="{{ route('inscripcion.index') }}" > <button type="button" class="btn btn-primary" style="background: white; border: 0px; color:red; padding: 20px">Inscríbete Aquí</button> </a></div>
        </div>
 
-      <img class="d-inline d-sm-none" src="{{ url('centro')}}/imagenes/Slides-sm-final.png" style="width: 400px; " alt="First slide">
-      <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
+      <div >
+        <img  id='portada' class=" d-inline d-sm-none mobile-only" src="{{ url('centro')}}/imagenes/Slides-sm-final.png" style="width: 410px;" alt="First slide">
+      </div>
+
+      <img class="d-none d-sm-inline d-md-none" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" style="width: 300px;" alt="First slide">
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
       <img class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slides-xl-final.png" alt="First slide">
     </div>
+
+
    <!--  <div class="carousel-item" >
       <div style="position: relative;">
             <div style="position: absolute; left: 70%; top: 400px;"> <img src="{ { url('centro')}}/imagenes/Slider-Final-2.png" > </div>
@@ -211,9 +216,6 @@
   </a>
 </div>
 
-
-
-
 <section id="porta">
  <div class="container-fluid">
     <div class="row cambiar" style="height: 470px;">
@@ -222,7 +224,7 @@
        <div class="col-sm-6 offset-md-6 ">
         <br>
         <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="container d-flex justify-content-center">
+      data-aos-duration="300" class="container d-flex justify-content-center">
 
           <img src="{{ url('centro')}}/imagenes/img2/Fecha_Curso.png" >
         </div>
@@ -249,7 +251,7 @@
         <div class="carousel-caption">
               <br>
               <div data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="row d-flex justify-content-center">
+     data-aos-duration="500" class="row d-flex justify-content-center">
                 <div class="col-xs-12 ">
                      <img src="{{ url('centro') }}/imagenes/directivos/Dr. José Jerónimo Guibovich.png" style="width: 200px; height: 200px;" alt="" class="img-responsive rounded-circle img-fluid"/>
                      <h3 style="color:white">Dr. José Jerónimo Guibovich </h3><br>

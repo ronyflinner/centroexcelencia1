@@ -7,10 +7,10 @@
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-6.png" alt="First slide" style="width:800px; height: 400px; ">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-6.png" alt="First slide">
       <img class="d-none d-xl-inline" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-6.png" alt="First slide" style="width:1400px; height: 400px; ">
+      data-aos-duration="700" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-6.png" alt="First slide" style="width:1400px; height: 400px; ">
      <br><br>
        <div class="section-title" data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900" >
+      data-aos-duration="900" >
             <h4 style="color: #606060; " align="center">Inscripción</h4>
        </div>
 
@@ -25,7 +25,7 @@
                       {!! Form::token() !!}
                 <div class="row">
                   <div class="col-md-6" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
                     <div class="form-group">
                             <label for="name">
                                 Nombre</label>
@@ -34,7 +34,7 @@
                   </div>
 
                     <div class="col-md-6" data-aos="fade-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
                        <div class="form-group">
                             <label for="name">
                                 DNI</label>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="row">
                    <div class="col-md-6" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
                        <div class="form-group">
                             <label for="name">
                                 Correo Electrónico</label>
@@ -52,7 +52,7 @@
                         </div>
                    </div>
                    <div class="col-md-6" data-aos="fade-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
                        <div class="form-group">
                             <label for="name">
                                 Número telefónico</label>
@@ -62,7 +62,7 @@
                 </div>
                 <div class="row">
                   <div class="col-md-6" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
                     <div class="form-group">
                           <label for="exampleFormControlSelect1">Seleccionar Curso</label>
                           <select class="form-control" id="exampleFormControlSelect1" data-parsley-required name="curso">
@@ -73,7 +73,7 @@
                     </div>
                   </div>
                    <div class="col-md-6" data-aos="fade-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
                       <div class="form-group">
                               <label for="exampleFormControlSelect1">Seleccionar tipo de participante</label>
                               <select class="form-control" data-parsley-required  id="exampleFormControlSelect1" name="tipo">
@@ -88,8 +88,7 @@
                 </div>
 
                         {{ csrf_field() }}
-                    <div class="d-flex justify-content-center" data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">
+                    <div class="d-flex justify-content-center" data-aos="zoom-in" data-aos-duration="900">
                     	 <div class=" mr-sm-2 col-sm-5 wrap-input-container ">
                         <label class="custom-file-upload form-control">
                           <i class="fa fa-cloud-upload"></i> Añadir voucher de pago
@@ -101,13 +100,11 @@
 
 
                 <br>
-                <div class="container" data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900">
+                <div class="container" data-aos="zoom-in" data-aos-duration="900">
                       <h3 class="text-center">Términos y Condiciones</h3>
                 </div><br>
 
-                <div data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="900" class="container text-justify" style="overflow: scroll; height: 200px;">
+                <div data-aos="zoom-in" data-aos-duration="900" class="container text-justify" style="overflow: scroll; height: 200px;">
 
 
                 <p class="primeralinea">Este sitio web es operado por Liga Contra el Cancer. En todo el sitio, los términos “nosotros”, “nos” y “nuestro” se refieren a Liga Contra el Cancer. Liga Contra el Cancer ofrece este sitio web, incluyendo toda la información, herramientas y servicios disponibles para ti en este sitio, el usuario, está condicionado a la aceptación de todos los términos, condiciones, políticas y notificaciones aquí establecidos.</p>
@@ -262,48 +259,5 @@ $(document).on('change', '.file-upload', function(){
             browseClass: "btn btn-primary btn-lg",
             fileType: "any"
         });
-/*
-   $('#enviar').click(function(event) {
-
-    var file2 = $('#file-1');   //Ya que utilizas jquery aprovechalo...
-    var archivo = file2[0].files;       //el array pertenece al elemento
-
-    if(archivo)
-    {
-
-        // Crea un formData y lo envías
-        var formData = new formData(form);
-        formData.append('titulo',titulo);
-        formData.append('archivo[]',archivo);
-
-        console.log(archivo);
-
-        vurl='{ { url('inscribir2') }}';
-                               var parametros = {
-                                       "usuario" : formData,
-                                    };
-                                console.log(vurl);
-                                $.ajax({
-                                url:   vurl,
-                                data: parametros,
-                                type:  'GET',
-                                dataType : 'json',
-                                headers: {
-                                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                                          } ,
-                                success:  function (data) {
-                                      console.log(data);
-                                },
-                                error: function (data2) {
-                                   console.log('Error:', data2);
-                                  },
-                                  async: false
-                                });
-
-    }
-   });
-
-
-   */
  </script>
 @endsection

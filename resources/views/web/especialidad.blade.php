@@ -8,29 +8,9 @@
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-5.png" alt="First slide" style="width:800px; height: 400px; ">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-5.png" alt="First slide">
       <img class="d-none d-xl-inline" data-aos="fade-down"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-5.png" alt="First slide" style="width:1400px; height: 400px; ">
+      data-aos-duration="700" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-5.png" alt="First slide" style="width:1400px; height: 400px; ">
 <br>
 
-<!-- <div class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="d-flex justify-content-center">
-        <img src="{ { url('centro') }}/imagenes/img2/Screenshot_7.png" alt="logo" width="400" height="400">
-      </div>
-
-    </div>
-    <div class="col-md-6">
-      <div class="container">
-      <p align="justify">
-        El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer como:
-      </p>
-
-      </div>
-
-
-    </div>
-  </div>
-</div> -->
 <style type="text/css">
  @import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
 figure.snip0078 {
@@ -272,7 +252,7 @@ elemento{
 </style>
 
 <div data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
             <h2 style="color: #606060; " align="center">Cursos y Capacitaciones</h2>
               <hr>
              <p align="center" style="text-transform:none; color: black">El Centro de Excelencia en Prevención de Cáncer, como parte de su programa de formación y entrenamiento de los profesionales de la salud, brindará cursos y congresos especializados en los diferentes tipos de cáncer. </p>
@@ -340,7 +320,7 @@ elemento{
             <div class="container">
 
             <div class="cnt-block equal-hight" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
           <!-- <h5 style="color:white" align="center">Curso de Prevención de Cancer En Primer Nivel de Atención de Salud</h5>-->
              <div class="mb-2"></div>
             <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
@@ -384,7 +364,7 @@ elemento{
   </div>
   <div class="row">
       <div data-aos="flip-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+      data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
             <a href="{{route('inscripcion.index')}}">
               <div class="contenedor">
                   <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -399,7 +379,7 @@ elemento{
             </a>
       </div>
       <div data-aos="flip-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+      data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
           <a href="{{route('inscripcion.index')}}">
           <div class="contenedor">
             <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -414,7 +394,7 @@ elemento{
           </a>
     </div>
     <div data-aos="flip-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+     data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
           <a href="{{route('inscripcion.index')}}">
           <div class="contenedor">
             <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -429,7 +409,7 @@ elemento{
           </a>
     </div>
     <div data-aos="flip-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
+      data-aos-duration="700" class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
           <a href="{{route('inscripcion.index')}}">
           <div class="contenedor">
             <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
@@ -449,171 +429,6 @@ elemento{
 </div>
 </div>
 </section>
-<!--
-<section class="services">
-
-<div class="container">
-   <div class="accordion accordion-1" id="accordionEx23" role="tablist">
-       <div class="card" data-aos="fade-up" data-aos-delay="300">
-           <div class="card-header blue lighten-3 z-depth-1" role="tab" id="heading97">
-
-
-
-               <h2 class="text-uppercase mb-0 py-1">
-                   <a class="collapsed" data-toggle="collapse" href="#collapse97" aria-expanded="false" aria-controls="collapse97" style="font-size: 16px; text-transform:none;">1ER CURSO INTERNACIONAL EN CONTROL DE CÁNCER PARA PRIMERA NIVEL DE ATENCIÓN<i class="fa fa-angle-down rotate-icon fa-2x"></i>
-
-                   </a>
-               </h2>
-
-           </div>
-           <div id="collapse97" class="collapse" role="tabpanel" aria-labelledby="heading97" data-parent="#accordionEx23">
-               <div class="card-body">
-                     <section>
-  <div class="container">
-     <div class="row">
-
-
-         <div class="col-md-6 d-inline d-sm-none" style="background: url('{{ url('centro') }}/imagenes/img2/congres_350x400.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; height: 400px">  </div>
-          <div class="col-md-6 d-none d-sm-inline d-md-none" style="background: url('{{ url('centro') }}/imagenes/img2/congres_350x400.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; height: 400px">  </div>
-         <div class="col-md-6 d-none d-md-inline d-lg-none" style="background: url('{{ url('centro') }}/imagenes/img2/congres_350x400.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; height: 400px">  </div>
-          <div class="col-md-6 d-none d-lg-inline d-xl-none" style="background: url('{{ url('centro') }}/imagenes/img2/congres_350x400.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; height: 400px">  </div>
-          <div class="col-md-6 d-none d-xl-inline" style="background: url('{{ url('centro') }}/imagenes/img2/congreso.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; height: 400px">  </div>
-
-     <div class="col-md-6 " style="background:#ea2929; height: 400px">
-         <br>
-        <div class="d-flex justify-content-center" style="border-right: 2px solid white; border-left: 2px solid white; height: 350px; ">
-          <div class="container d-flex align-items-center">
-            <div class="container">
-
-            <div class="cnt-block equal-hight">
-
-             <div class="mb-2"></div>
-            <h6 align="center" style="color:white" >Requisitos: Profesiones de la salud.</h6>
-            <div class="mb-2" ></div>
-            <h6 align="center" style="color:white">Fecha de inicio: 09 y 10 de abril</h6>
-            <div class="mb-2"></div>
-            <h6 align="center" style="color:white">Lugar: Hotel Sol de Oro, Calle San Martín 305 miraflores</h6>
-           <div class="mb-2"></div><br>
-            <div class="d-flex justify-content-center">
-              <a class="btn btn-primary btn-download" href="{{ url('/') }}/words/pdfcongreso.pdf" download="CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD.pdf" style="background: white; border: 0px; color:red;"><span class="glyphicon glyphicon-ok"></span> Descargar Temario</a>
-              <br><br><br>
-
-            </div>
-          </div>
-            </div>
-
-          </div>
-       </div>
-     </div>
-     </div>
-
-  </div>
-
-
-</section>
-<style type="text/css">
-  figure p{
-         color: white;
-  }
-</style>
-<div class="container">
-  <div class="row">
-    <div class="col-md-3">
-
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <br>
-  <div class="section-title">
-            <h4 style="font-size:30px; color: #606060;">INSCRIPCIÓN</h4>
-  </div>
-  <div class="row">
-      <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
-            <a href="{{route('inscripcion.index')}}">
-              <div class="contenedor">
-                  <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
-                  <div class="texto-encima"></div>
-                  <div class="centrado">
-                      <h5 style="color:white">Médicos Especialistas</h5>
-                      <h7 style="color:white; font-size:15px;">Pre Incripción: 250 soles</h7>
-                      <div style="color:white" class="md-3"></div>
-                      <p class="text-center" style="font-size: 11px; color:white;" >Día del evento: 300 soles</p>
-                  </div>
-                </div>
-            </a>
-      </div>
-      <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
-          <a href="{{route('inscripcion.index')}}">
-          <div class="contenedor">
-            <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
-            <div class="texto-encima"></div>
-               <div class="centrado">
-                <h5 style="color:white">Médicos Generales</h5>
-                <h7 style="color:white; font-size:15px;">Pre Incripción: 200 soles</h7>
-                <div style="color:white" class="md-3"></div>
-                <p class="text-center" style="font-size: 11px; color:white;" >Día del evento: 250 soles</p>
-              </div>
-        </div>
-          </a>
-    </div>
-    <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
-          <a href="{{route('inscripcion.index')}}">
-          <div class="contenedor">
-            <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
-            <div class="texto-encima"></div>
-               <div class="centrado">
-                <h5 style="color:white">Otros Profesionales</h5>
-                <h7 style="color:white; font-size:15px;">Pre Incripción: 180 soles</h7>
-                <div style="color:white" class="md-3"></div>
-                <p class="text-center" style="font-size: 11px; color:white;" >Día del evento: 200 soles</p>
-              </div>
-        </div>
-          </a>
-    </div>
-    <div class="col-md-3 col-sm-12 d-flex justify-content-center" style="margin-bottom: 10px;">
-          <a href="{{route('inscripcion.index')}}">
-          <div class="contenedor">
-            <img src="{{ url('centro') }}/imagenes/precio-1.png" style='width: 250px' />
-
-            <div class="texto-encima"></div>
-               <div class="mb-4"></div>
-               <div class="centrado">
-                <h5 style="color:white">Internos</h5>
-                <div class="mb-3"></div>
-                <h7 style="color:white; font-size:15px;">Pre Incripción: 100 soles</h7>
-                <div style="color:white" class="md-3"></div>
-                <p class="text-center" style="font-size: 11px; color:white;" >Día del evento: 150 soles</p>
-              </div>
-        </div>
-          </a>
-    </div>
-</div>
-</div>
-
-               </div>
-           </div>
-       </div>
-               </div>
-           </div>
-       </div>
-   </div>
-
-</div>
-</section>
--->
-
 
 </div>
 </section>
@@ -621,14 +436,7 @@ elemento{
 <style type="text/css">
 
 </style>
-<!-- <div class="d-flex justify-content-center" style="background: url('{ { url('centro') }}/imagenes/imagen-1.png'); background-size: cover;
-                  background-repeat: no-repeat;
-                  background-position: center; height: 200px" >
 
-   <div class="d-flex align-items-center" >
-         <a class="btn btn-primary"   href="#primary" data-toggle="modal" style="background: white; border: 0px; color:red; padding: 20px;"><span class="glyphicon glyphicon-ok"></span> Inscribete Aquí</a>
-   </div>
-</div> -->
 
 <style type="text/css">
   .row.heading h2 {
@@ -762,7 +570,7 @@ ul{
 
             </div>
             <div class="col-md-4 col-sm-12" data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+     data-aos-duration="700" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;  height: 350px; padding: 35px;" >
                  <div class="d-flex justify-content-center">
@@ -808,7 +616,7 @@ ul{
 
 
             <div data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+    data-aos-duration="700" class="col-md-4 col-sm-12" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center;  height: 350px; padding: 35px;" >
                  <div class="d-flex justify-content-center">

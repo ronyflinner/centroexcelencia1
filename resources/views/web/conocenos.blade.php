@@ -223,19 +223,19 @@
       <img class="d-none d-md-inline d-lg-none " src="{{ url('centro')}}/imagenes/Slider/Celular/Slider-1.png" alt="First slide" style="width:800px; height: 400px; ">
       <img class="d-none d-lg-inline d-xl-none" src="{{ url('centro')}}/imagenes/Slider/Web-Windows/Slider-1.png" alt="First slide">
       <img data-aos="fade-down"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500" class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-1.png" alt="First slide" style="width:1400px; height: 400px; ">
+      data-aos-duration="500" class="d-none d-xl-inline" src="{{ url('centro')}}/imagenes/Slider/Web-iMac/Slider-1.png" alt="First slide" style="width:1400px; height: 400px; ">
   <br>
 <div class="container-fluid">
   <div class="row d-flex align-items-center">
     <div class="col-md-6 d-flex justify-content-center">
       <div class="d-flex" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
         <img src="{{ url('centro')}}/imagenes/DOCTORA.png" style="width:300px; height: 300px; "alt="First slide" alt="logo" width="450" height="400">
       </div>
     </div>
     <div class="col-md-6">
       <div class="container" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+      data-aos-duration="700">
 
       <br>
       <p  class="text-justify primeralinea">
@@ -263,7 +263,7 @@
         <div class="row">
 
             <div class="col-md-4 col-sm-12" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="300" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+      data-aos-duration="300" style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; filter: grayscale(50%) brightness(200%);
               -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 40px;" >
@@ -275,7 +275,7 @@
             </div>
 
             <div class="col-md-4 col-sm-12 offset-md-4" data-aos="fade-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="300"  style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
+     data-aos-duration="300"  style="background:url('{{ url('centro') }}/imagenes/img2/Marco.png'); background-size: cover;
                   background-repeat: no-repeat;
                   background-position: center; filter: grayscale(50%) brightness(200%);
               -webkit-filter: grayscale(50%) brightness(200%); height: 350px; padding: 40px;" >
@@ -299,11 +299,12 @@
   <div class="container">
 
       <div class="section-title" data-aos="fade-down-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="500">
+     data-aos-duration="500">
                   <h4 style="color: #606060; "> DOCENTES MÉDICOS</h4>
       </div>
     <ul class="row">
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Galdos,-Rafael.png" class="img-responsive" alt=""></figure>
              <span style="font-size: 18px;"><br>Dr. Raúl Velarde Galdos</span><br>
@@ -315,7 +316,8 @@
 
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr. José Jerónimo Guibovich.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Dr. José Jerónimo Guibovich </span><br>
@@ -324,14 +326,16 @@
 </small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Velarde-Mendez,-Marco.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Dr. Velarde Méndez, Marco </span><br>
             <small style="font-size:12px;">Cirujano Oncólogo de mamas y tejidos blandos</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr-AguilarRamosPedro.png" class="img-responsive" alt=""></figure>
 
@@ -341,14 +345,16 @@
 
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Grisson-Barron,-Gilmar.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Dr. Gilmar Grisson Barron </span><br>
             <small style="font-size:12px;">Cirujano Oncólogo</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-Lama-Calle,-Carlos.png" class="img-responsive" alt=""></figure>
 
@@ -357,7 +363,8 @@
 
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dr.-López-Blanco,-Aldo.png" class="img-responsive" alt=""></figure>
 
@@ -365,42 +372,48 @@
             <small style="font-size:12px;">Ginecólogo Oncólogo</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Carrasco-Collantes,-Marcia.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Dra. Carrasco Collantes, Marcia </span><br>
             <small style="font-size:12px;">Cirujana Oncóloga de senos y tumores mixtos</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Dra.-Malca-Tocas,-Mirtha.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Dra. Mirtha Malca Tocas </span><br>
             <small style="font-size:12px;">Ginecóloga Oncóloga</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Torres-Campos,-Clerk-Oriele.png" class="img-responsive" alt=""></figure>
              <span style="font-size: 18px;"><br> Lic. Clerk Torres Campos  </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Lopez-Ampuero,-Catya-Luz.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Lic. Catya López Ampuero </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Medrano-Guillen,-Claudia-Nathaly.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Lic. Claudia Medrano Guillen  </span><br>
             <small style="font-size:12px;">Obstetra</small>
           </div>
       </li>
-      <li class="col-12 col-md-6 col-lg-3">
+      <li class="col-12 col-md-6 col-lg-3" data-aos="fade-up"
+     data-aos-duration="800">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="{{ url('centro') }}/imagenes/directivos/Lic.-Gonzales-Cabrera-,-Magali-Jovana.png" class="img-responsive" alt=""></figure>
             <span style="font-size: 18px;"><br> Lic. Magali Gonzáles Cabrera  </span><br>

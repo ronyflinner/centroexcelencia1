@@ -6,7 +6,7 @@
 <br>
        <div class="section-title" >
             <h4 style="color: #606060; " data-aos="fade-down"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700" align="center">Contacto</h4>
+      data-aos-duration="700" align="center">Contacto</h4>
        </div>
 <div class="container">
 
@@ -33,14 +33,12 @@
                       {!! Form::token() !!}
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="form-group" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+                        <div class="form-group" data-aos="fade-right" data-aos-duration="700">
                             <label for="name">
                                 Nombre</label>
                             <input type="text" class="form-control" name="nombre"  id="nombre" placeholder="Ingresa nombre" required="required" />
                         </div>
-                        <div class="form-group" data-aos="fade-right"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+                        <div class="form-group" data-aos="fade-right" data-aos-duration="700">
                             <label for="email">
                                 Correo Electrónico</label>
                             <div class="input-group">
@@ -55,8 +53,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="form-group" data-aos="zoom-in"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+                        <div class="form-group" data-aos="zoom-in" data-aos-duration="700">
                             <label for="name">
                                 Mensaje</label>
                             <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
@@ -77,8 +74,7 @@
                 </form>
             </div>
         </div>
-        <div class="col-md-4" data-aos="flip-left"
-     data-aos-anchor-placement="bottom-bottom" data-aos-duration="700">
+        <div class="col-md-4" data-aos="flip-left" data-aos-duration="700">
             <form>
 
             <address>
