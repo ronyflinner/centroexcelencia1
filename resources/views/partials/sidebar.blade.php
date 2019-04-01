@@ -12,6 +12,13 @@
             </li>
 
             <li class="{{ $request->segment(1) == 'comentario' ? 'active' : '' }}">
+                <a href="{{ route('admin.crearcurso.index') }}">
+                    <i class="fa  fa-user-plus"></i>
+                    <span class="title">Crear Curso</span>
+                </a>
+            </li>
+
+            <li class="{{ $request->segment(1) == 'comentario' ? 'active' : '' }}">
                 <a href="{{ route('admin.comentarios.index') }}">
                     <i class="fa  fa-user-plus"></i>
                     <span class="title">Comentarios</span>

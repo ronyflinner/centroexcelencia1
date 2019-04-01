@@ -28,7 +28,7 @@
       data-aos-duration="700">
                     <div class="form-group">
                             <label for="name">
-                                Nombre</label>
+                                Nombre </label>
                             <input type="text" class="form-control" data-parsley-required name="name" placeholder="Ingresa nombre" />
                         </div>
                   </div>
@@ -66,8 +66,10 @@
                     <div class="form-group">
                           <label for="exampleFormControlSelect1">Seleccionar Curso</label>
                           <select class="form-control" id="exampleFormControlSelect1" data-parsley-required name="curso">
-                            <option value="" selected="">Selecionar </option>
-                            <option value="1">Curso de Prevención de Cancer en Primer Nivel de Atención de Salud </option>
+                             <option value="" selected="">Selecionar </option>
+                             @foreach($curso as $value)
+                                 <option value="{{ $value->id }}">{{ $value->nombre }}</option>
+                            @endforeach
                             <!--<option value="2">Curso de Asesoria Genética de Cancer Dirigido al Perimer Nivel de Atención de Salud</option>-->
                           </select>
                     </div>
@@ -259,5 +261,8 @@ $(document).on('change', '.file-upload', function(){
             browseClass: "btn btn-primary btn-lg",
             fileType: "any"
         });
+
+
+  $('.alert').fadeOut(7000);
  </script>
 @endsection

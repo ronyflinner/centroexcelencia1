@@ -68,4 +68,6 @@ Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], 
 	Route::resource('docsearch', 'Admin\DocumentoSearchController');
 	Route::resource('comentarios', 'Admin\ComentariosController');
 
+	Route::resource('crearcurso', 'Curso\CrearCursoController');
+
 });

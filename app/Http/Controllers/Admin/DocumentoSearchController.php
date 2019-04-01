@@ -141,7 +141,7 @@ class DocumentoSearchController extends Controller {
 			$register = DB::table('inscripcions')
 				->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
 				->where('inscripcions.estado', 0)
-				->select('personas.nombre', 'personas.email', 'personas.numero')->get();
+				->select('personas.nombre', 'personas.email', 'personas.numero', 'inscripcions.voucher', 'personas.dni')->get();
 
 			//$register = Inscripcion::where('estado', 0)->get();
 			$pdf = PDF::loadView('report.historialrecibidos', ['register' => $register, 'respuesta' => 'Recibidas', 'curso' => $namecurso]);
@@ -149,17 +149,17 @@ class DocumentoSearchController extends Controller {
 			$register = DB::table('inscripcions')
 				->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
 				->where('inscripcions.estado', 1)
-				->select('personas.nombre', 'personas.email', 'personas.numero')->get();
+				->select('personas.nombre', 'personas.email', 'personas.numero', 'inscripcions.voucher', 'personas.dni')->get();
 			$pdf = PDF::loadView('report.historialrecibidos', ['register' => $register, 'respuesta' => 'Aceptadas', 'curso' => $namecurso]);
 		} else if ($request->spdf == -1) {
 			$register = DB::table('inscripcions')
 				->join('personas', 'personas.id', '=', 'inscripcions.id_persona')
 				->where('inscripcions.estado', -1)
-				->select('personas.nombre', 'personas.email', 'personas.numero')->get();
+				->select('personas.nombre', 'personas.email', 'personas.numero', 'inscripcions.voucher', 'personas.dni')->get();
 			$pdf = PDF::loadView('report.historialrecibidos', ['register' => $register, 'respuesta' => 'Rechazadas', 'curso' => $namecurso]);
 		}
 
-		$pdf->setPaper('a4', 'portrait')
+		$pdf->setPaper('a4', 'landscape')
 			->setWarnings(false)
 			->setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true]);
 		//$pdf->setOptions(['dpi' => 150, 'defaultFont' => 'sans-serif']);

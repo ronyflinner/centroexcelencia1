@@ -330,7 +330,7 @@ elemento{
             <h6 align="center" style="color:white">Lugar: Hotel Sol de Oro, Calle San Martín 305 miraflores</h6>
            <div class="mb-2"></div><br>
             <div class="d-flex justify-content-center">
-              <a class="btn btn-primary btn-download" href="{{ url('/') }}/words/pdfcongreso.pdf" download="CONGRESO DE PREVENCIÓN DE CANCER EN PRIMER NIVEL DE ATENCIÓN DE SALUD.pdf" style="background: white; border: 0px; color:red; height: 33px"><span class="glyphicon glyphicon-ok"></span> Descargar Temario</a>
+              <a class="btn btn-primary btn-download" href="{{ url('/') }}/words/pdfcongreso.pdf" download="TEMARIO 1ER CURSO INTERNACIONAL EN CONTROL DE CÁNCER PARA PRIMERA NIVEL DE ATENCIÓN.pdf" style="background: white; border: 0px; color:red; height: 33px"><span class="glyphicon glyphicon-ok"></span> Descargar Temario</a>
               <br><br><br>
 
             </div>

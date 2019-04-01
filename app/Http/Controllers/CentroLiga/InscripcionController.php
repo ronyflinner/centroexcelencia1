@@ -3,7 +3,10 @@
 namespace App\Http\Controllers\CentroLiga;
 
 use App\Http\Controllers\Controller;
+use App\Mail\DemoEmail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 
 class InscripcionController extends Controller {
@@ -13,7 +16,8 @@ class InscripcionController extends Controller {
 	 * @return \Illuminate\Http\Response
 	 */
 	public function index() {
-		return view('web.inscripcion');
+		$curso = DB::table('cursos')->get();
+		return view('web.inscripcion', ['curso' => $curso]);
 	}
 
 	/**
@@ -86,7 +90,7 @@ class InscripcionController extends Controller {
 				$path = $this->addFile($request->file('archivo'));
 				if ($path == 0) {
 					Session::flash('mensaje_errors', 'Fomato de imagen erróneo , escoger tipo JPG o PNG');
-					return view('web.inscripcion');
+					return $this->index();
 				}
 				// si existe
 				$persona = \DB::table('personas')->where('dni', $dni)->get();
@@ -115,14 +119,16 @@ class InscripcionController extends Controller {
 				} else {
 					// creo la inscripción
 					$insertid2 = \DB::table('inscripcions')->insertGetId(['id_curso' => $curso, 'id_persona' => $insertid, 'tipo_inscripcion' => $tipo, 'voucher' => $path, 'token' => $slug2, 'fecha_inscripcion' => $fecha, 'estado' => 0]);
+					Mail::to($email)->queue(new DemoEmail($insertid2));
+
 					Session::flash('mensaje_success', 'Sus datos fueron guardados correctamente');
 				}
 
-				return view('web.inscripcion');
+				return $this->index();
 
 			} else {
 				Session::flash('mensaje_success', 'Sus datos no fueron guardados');
-				return view('web.inscripcion');
+				return $this->index();
 			}
 		}
 

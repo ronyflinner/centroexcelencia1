@@ -13,12 +13,10 @@
 
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
-                            <strong>Ohh!!</strong> Tenemos un problema con estos:
+                            Estas credenciales no coinciden con nuestros registros (Verifique si ha sido activado para iniciar sesión en el sistema).
                             <br><br>
                             <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
+
                             </ul>
                         </div>
                     @endif
@@ -52,28 +50,16 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <a href="{{ route('auth.password.reset') }}">Forgot your password?</a>
-                            </div>
-                        </div>
 
 
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <label>
-                                    <input type="checkbox"
-                                           name="remember"> Remember me
-                                </label>
-                            </div>
-                        </div>
+
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit"
                                         class="btn btn-primary"
                                         style="margin-right: 15px;">
-                                    Login
+                                   Ingresar
                                 </button>
                             </div>
                         </div>
